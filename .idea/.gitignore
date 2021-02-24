@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../Pomelo\.idea/codestream.xml
+# Datasource local storage ignored files
+/../../../../../../:\project\git project\pomelo\Pomelo\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
