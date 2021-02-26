@@ -6,28 +6,28 @@
   src: url("../../font/Vazir.woff2");
 }
 @font-face {
-  font-family: normal-font;
+  font-family: mediume-font;
   src: url("../../font/Vazir-Medium.eot");
   src: url("../../font/Vazir-Medium.ttf");
   src: url("../../font/Vazir-Medium.woff");
   src: url("../../font/Vazir-Medium.woff2");
 }
 @font-face {
-  font-family: normal-font;
+  font-family: bold-font;
   src: url("../../font/Vazir-Bold.eot");
   src: url("../../font/Vazir-Bold.ttf");
   src: url("../../font/Vazir-Bold.woff");
   src: url("../../font/Vazir-Bold.woff2");
 }
 @font-face {
-  font-family: normal-font;
+  font-family: light-font;
   src: url("../../font/Vazir-Light.eot");
   src: url("../../font/Vazir-Light.ttf");
   src: url("../../font/Vazir-Light.woff");
   src: url("../../font/Vazir-Light.woff2");
 }
 @font-face {
-  font-family: normal-font;
+  font-family: thin-font;
   src: url("../../font/Vazir-Thin.eot");
   src: url("../../font/Vazir-Thin.ttf");
   src: url("../../font/Vazir-Thin.woff");

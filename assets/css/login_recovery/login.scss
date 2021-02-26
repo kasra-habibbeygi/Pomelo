@@ -1,0 +1,159 @@
+@import "../general/general";
+
+%box_style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  @extend %gradient;
+
+  .login_page{
+    width: 70%;
+    height: 70vh;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .l_left_b{
+    @extend %box_style;
+
+    form{
+      text-align: right;
+      width: 65%;
+
+      .form-group{
+        margin-bottom: 20px;
+        input{
+          background: #E6E6E6;
+        }
+      }
+
+      .form-check{
+        .cb_label{
+          display: block;
+          position: relative;
+          padding-right: 35px;
+          margin-bottom: 10px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          .ck_input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked ~ .checkmark {
+              background-color: #2196F3;
+            }
+
+            &:checked ~ .checkmark:after {
+              display: block;
+            }
+          }
+          .checkmark{
+            position: absolute;
+            top: 2px;
+            right: 0;
+            border-radius: 3px;
+            height: 20px;
+            width: 20px;
+            background-color: #E6E6E6;
+
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+            }
+
+            &:after {
+              left: 6.7px;
+              top: 3.5px;
+              width: 6px;
+              height: 12px;
+              border: solid white;
+              border-width: 0 2px 2px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+          }
+        }
+
+
+      }
+
+      .btn{
+        background: #2196F3;
+        width: 100%;
+      }
+
+      .forgot_pass{
+       direction: rtl;
+        color: $smal_text;
+        &:hover{
+          color: #2196F3;
+        }
+      }
+
+      .input-group-prepend{
+        .input-group-text{
+          background: white;
+          border-radius: 0px 5px 5px 0;
+          border-left:none ;
+          &:hover{
+            background: #2196F3;
+            color: white;
+          }
+
+        }
+
+      }
+
+      #password{
+        border-radius: 5px 0px 0px 5px !important;
+      }
+
+    }
+  }
+  .l_right_b{
+    @extend %box_style;
+    padding-top: 50px;
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "responsiveLogin";

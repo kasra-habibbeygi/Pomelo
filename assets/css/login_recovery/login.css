@@ -1,0 +1,198 @@
+.main {
+  background: #00236b;
+  background: linear-gradient(270deg, #00236b 0%, #005d82 47%, #008ba7 73%, #8decff 100%);
+}
+
+@font-face {
+  font-family: normal-font;
+  src: url("../../font/Vazir.eot");
+  src: url("../../font/Vazir.ttf");
+  src: url("../../font/Vazir.woff");
+  src: url("../../font/Vazir.woff2");
+}
+@font-face {
+  font-family: mediume-font;
+  src: url("../../font/Vazir-Medium.eot");
+  src: url("../../font/Vazir-Medium.ttf");
+  src: url("../../font/Vazir-Medium.woff");
+  src: url("../../font/Vazir-Medium.woff2");
+}
+@font-face {
+  font-family: bold-font;
+  src: url("../../font/Vazir-Bold.eot");
+  src: url("../../font/Vazir-Bold.ttf");
+  src: url("../../font/Vazir-Bold.woff");
+  src: url("../../font/Vazir-Bold.woff2");
+}
+@font-face {
+  font-family: light-font;
+  src: url("../../font/Vazir-Light.eot");
+  src: url("../../font/Vazir-Light.ttf");
+  src: url("../../font/Vazir-Light.woff");
+  src: url("../../font/Vazir-Light.woff2");
+}
+@font-face {
+  font-family: thin-font;
+  src: url("../../font/Vazir-Thin.eot");
+  src: url("../../font/Vazir-Thin.ttf");
+  src: url("../../font/Vazir-Thin.woff");
+  src: url("../../font/Vazir-Thin.woff2");
+}
+body {
+  overflow-x: hidden;
+  font-family: normal-font;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  border-radius: 5px !important;
+  border: 1px solid #e5e5e5 !important;
+}
+
+textarea {
+  border-radius: 10px !important;
+  border: 1px solid #e5e5e5 !important;
+  line-height: 30px !important;
+  height: 150px !important;
+}
+
+select {
+  border-radius: 10px !important;
+  border: 1px solid #e5e5e5 !important;
+  text-align: center;
+}
+
+.form-control:focus {
+  color: #495057;
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: 0px 0px 5px 2px #00000015 !important;
+}
+
+.form-control {
+  color: #535353 !important;
+}
+
+label {
+  color: #626262 !important;
+}
+
+.main .l_right_b, .main .l_left_b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.main .login_page {
+  width: 70%;
+  height: 70vh;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.main .l_left_b form {
+  text-align: right;
+  width: 65%;
+}
+.main .l_left_b form .form-group {
+  margin-bottom: 20px;
+}
+.main .l_left_b form .form-group input {
+  background: #E6E6E6;
+}
+.main .l_left_b form .form-check .cb_label {
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.main .l_left_b form .form-check .cb_label .ck_input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.main .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.main .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark:after {
+  display: block;
+}
+.main .l_left_b form .form-check .cb_label .checkmark {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  border-radius: 3px;
+  height: 20px;
+  width: 20px;
+  background-color: #E6E6E6;
+}
+.main .l_left_b form .form-check .cb_label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.main .l_left_b form .form-check .cb_label .checkmark:after {
+  left: 6.7px;
+  top: 3.5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.main .l_left_b form .btn {
+  background: #2196F3;
+  width: 100%;
+}
+.main .l_left_b form .forgot_pass {
+  direction: rtl;
+  color: #4b4b4b;
+}
+.main .l_left_b form .forgot_pass:hover {
+  color: #2196F3;
+}
+.main .l_left_b form .input-group-prepend .input-group-text {
+  background: white;
+  border-radius: 0px 5px 5px 0;
+  border-left: none;
+}
+.main .l_left_b form .input-group-prepend .input-group-text:hover {
+  background: #2196F3;
+  color: white;
+}
+.main .l_left_b form #password {
+  border-radius: 5px 0px 0px 5px !important;
+}
+.main .l_right_b {
+  padding-top: 50px;
+}
+
+/*# sourceMappingURL=login.css.map */
