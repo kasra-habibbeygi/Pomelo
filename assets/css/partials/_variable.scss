@@ -1,0 +1,24 @@
+// color
+$white: white;
+$black: #171717;
+$smal_text: #4b4b4b;
+
+$gradient: linear-gradient(270deg, rgba(0, 35, 107, 1) 0%, rgba(0, 93, 130, 1) 47%, rgba(0, 139, 167, 1) 73%, rgba(141, 236, 255, 1) 100%);
+$bg_gradient: rgb(0, 35, 107);
+
+// fonts
+$nf: normal-font;
+$bf: normal-font;
+$lf: normal-font;
+$mf: normal-font;
+$tf: normal-font;
+
+//shadow
+$shadow: 0px 0px 6px -3px #00000073;
+
+
+//gradient css
+%gradient {
+  background: $bg_gradient;
+  background: $gradient;
+}
