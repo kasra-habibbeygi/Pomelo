@@ -101,13 +101,14 @@ label {
   height: 100vh;
 }
 .main .login_page {
-  width: 70%;
-  height: 70vh;
+  width: 65%;
   background: white;
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   overflow: hidden;
+  padding: 30px 0 20px;
 }
 .main .l_left_b form {
   text-align: right;
@@ -172,14 +173,6 @@ label {
   background: #006387;
   width: 100%;
   border: none;
-  transition: all 0.5s ease-out 0s;
-  -webkit-transition: all 0.5s ease-out 0s;
-  -ms-transition: all 0.5s ease-out 0s;
-  -moz-transition: all 0.5s ease-out 0s;
-}
-.main .l_left_b form .btn:hover {
-  background: #00236b;
-  background: linear-gradient(90deg, #00236b 0%, #005d82 47%, #008ba7 73%, #8decff 100%);
 }
 .main .l_left_b form .forgot_pass {
   direction: rtl;
@@ -200,8 +193,8 @@ label {
 .main .l_left_b form #password {
   border-radius: 5px 0px 0px 5px !important;
 }
-.main .l_right_b {
-  padding-top: 50px;
+.main .l_right_b .r_gif {
+  margin-right: 50px;
 }
 
 /*# sourceMappingURL=login.css.map */

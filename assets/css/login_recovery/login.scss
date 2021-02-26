@@ -18,18 +18,18 @@
   @extend %gradient;
 
   .login_page {
-    width: 70%;
+    width: 65%;
     background: white;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     overflow: hidden;
+    padding: 30px 0 20px;
   }
 
   .l_left_b {
     @extend %box_style;
-
     form {
       text-align: right;
       width: 65%;
@@ -107,12 +107,6 @@
         background: $d_blue;
         width: 100%;
         border: none;
-        @include transition(.5s, ease-out, 0s);
-
-        &:hover {
-          background: rgb(0, 35, 107);
-          background: linear-gradient(90deg, rgba(0, 35, 107, 1) 0%, rgba(0, 93, 130, 1) 47%, rgba(0, 139, 167, 1) 73%, rgba(141, 236, 255, 1) 100%);
-        }
       }
 
       .forgot_pass {
@@ -148,9 +142,11 @@
 
   .l_right_b {
     @extend %box_style;
-    padding-top: 50px;
 
-
+    .r_gif{
+      margin-right: 50px;
+      //width: 450px;
+    }
   }
 }
 
