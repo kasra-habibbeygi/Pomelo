@@ -19,11 +19,11 @@
 
   .login_page {
     width: 70%;
-    height: 70vh;
     background: white;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     overflow: hidden;
   }
 
@@ -61,11 +61,11 @@
             height: 0;
             width: 0;
 
-            &:checked ~ .checkmark {
+            &:checked~.checkmark {
               background-color: $d_blue;
             }
 
-            &:checked ~ .checkmark:after {
+            &:checked~.checkmark:after {
               display: block;
             }
           }
@@ -107,7 +107,7 @@
         background: $d_blue;
         width: 100%;
         border: none;
-        @include transition(.5s,ease-out,0s);
+        @include transition(.5s, ease-out, 0s);
 
         &:hover {
           background: rgb(0, 35, 107);
