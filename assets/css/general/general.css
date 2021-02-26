@@ -1,0 +1,83 @@
+@font-face {
+  font-family: normal-font;
+  src: url("../../font/Vazir.eot");
+  src: url("../../font/Vazir.ttf");
+  src: url("../../font/Vazir.woff");
+  src: url("../../font/Vazir.woff2");
+}
+@font-face {
+  font-family: normal-font;
+  src: url("../../font/Vazir-Medium.eot");
+  src: url("../../font/Vazir-Medium.ttf");
+  src: url("../../font/Vazir-Medium.woff");
+  src: url("../../font/Vazir-Medium.woff2");
+}
+@font-face {
+  font-family: normal-font;
+  src: url("../../font/Vazir-Bold.eot");
+  src: url("../../font/Vazir-Bold.ttf");
+  src: url("../../font/Vazir-Bold.woff");
+  src: url("../../font/Vazir-Bold.woff2");
+}
+@font-face {
+  font-family: normal-font;
+  src: url("../../font/Vazir-Light.eot");
+  src: url("../../font/Vazir-Light.ttf");
+  src: url("../../font/Vazir-Light.woff");
+  src: url("../../font/Vazir-Light.woff2");
+}
+@font-face {
+  font-family: normal-font;
+  src: url("../../font/Vazir-Thin.eot");
+  src: url("../../font/Vazir-Thin.ttf");
+  src: url("../../font/Vazir-Thin.woff");
+  src: url("../../font/Vazir-Thin.woff2");
+}
+body {
+  overflow-x: hidden;
+  font-family: normal-font;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  border-radius: 10px !important;
+  border: 1px solid #e5e5e5 !important;
+}
+
+textarea {
+  border-radius: 10px !important;
+  border: 1px solid #e5e5e5 !important;
+  line-height: 30px !important;
+  height: 150px !important;
+}
+
+select {
+  border-radius: 10px !important;
+  border: 1px solid #e5e5e5 !important;
+  text-align: center;
+}
+
+.form-control:focus {
+  color: #495057;
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: 0px 0px 5px 2px #00000015 !important;
+}
+
+.form-control {
+  color: #535353 !important;
+}
+
+label {
+  color: #626262 !important;
+}
+
+/*# sourceMappingURL=general.css.map */
