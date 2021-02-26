@@ -1,6 +1,6 @@
 @import "../general/general";
 
-%box_style{
+%box_style {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
 }
 
 
-.main{
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   height: 100vh;
   @extend %gradient;
 
-  .login_page{
+  .login_page {
     width: 70%;
     height: 70vh;
     background: white;
@@ -27,22 +27,23 @@
     overflow: hidden;
   }
 
-  .l_left_b{
+  .l_left_b {
     @extend %box_style;
 
-    form{
+    form {
       text-align: right;
       width: 65%;
 
-      .form-group{
+      .form-group {
         margin-bottom: 20px;
-        input{
+
+        input {
           background: #E6E6E6;
         }
       }
 
-      .form-check{
-        .cb_label{
+      .form-check {
+        .cb_label {
           display: block;
           position: relative;
           padding-right: 35px;
@@ -53,7 +54,7 @@
           -ms-user-select: none;
           user-select: none;
 
-          .ck_input{
+          .ck_input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
@@ -61,14 +62,15 @@
             width: 0;
 
             &:checked ~ .checkmark {
-              background-color: #2196F3;
+              background-color: $d_blue;
             }
 
             &:checked ~ .checkmark:after {
               display: block;
             }
           }
-          .checkmark{
+
+          .checkmark {
             position: absolute;
             top: 2px;
             right: 0;
@@ -101,26 +103,35 @@
 
       }
 
-      .btn{
-        background: #2196F3;
+      .btn {
+        background: $d_blue;
         width: 100%;
-      }
+        border: none;
+        @include transition(.5s,ease-out,0s);
 
-      .forgot_pass{
-       direction: rtl;
-        color: $smal_text;
-        &:hover{
-          color: #2196F3;
+        &:hover {
+          background: rgb(0, 35, 107);
+          background: linear-gradient(90deg, rgba(0, 35, 107, 1) 0%, rgba(0, 93, 130, 1) 47%, rgba(0, 139, 167, 1) 73%, rgba(141, 236, 255, 1) 100%);
         }
       }
 
-      .input-group-prepend{
-        .input-group-text{
+      .forgot_pass {
+        direction: rtl;
+        color: $smal_text;
+
+        &:hover {
+          color: $d_blue;
+        }
+      }
+
+      .input-group-prepend {
+        .input-group-text {
           background: white;
           border-radius: 0px 5px 5px 0;
-          border-left:none ;
-          &:hover{
-            background: #2196F3;
+          border-left: none;
+
+          &:hover {
+            background: $d_blue;
             color: white;
           }
 
@@ -128,32 +139,20 @@
 
       }
 
-      #password{
+      #password {
         border-radius: 5px 0px 0px 5px !important;
       }
 
     }
   }
-  .l_right_b{
+
+  .l_right_b {
     @extend %box_style;
     padding-top: 50px;
 
 
-
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @import "responsiveLogin";

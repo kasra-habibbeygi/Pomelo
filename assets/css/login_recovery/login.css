@@ -138,7 +138,7 @@ label {
   width: 0;
 }
 .main .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #006387;
 }
 .main .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark:after {
   display: block;
@@ -169,15 +169,24 @@ label {
   transform: rotate(45deg);
 }
 .main .l_left_b form .btn {
-  background: #2196F3;
+  background: #006387;
   width: 100%;
+  border: none;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+}
+.main .l_left_b form .btn:hover {
+  background: #00236b;
+  background: linear-gradient(90deg, #00236b 0%, #005d82 47%, #008ba7 73%, #8decff 100%);
 }
 .main .l_left_b form .forgot_pass {
   direction: rtl;
   color: #4b4b4b;
 }
 .main .l_left_b form .forgot_pass:hover {
-  color: #2196F3;
+  color: #006387;
 }
 .main .l_left_b form .input-group-prepend .input-group-text {
   background: white;
@@ -185,7 +194,7 @@ label {
   border-left: none;
 }
 .main .l_left_b form .input-group-prepend .input-group-text:hover {
-  background: #2196F3;
+  background: #006387;
   color: white;
 }
 .main .l_left_b form #password {
