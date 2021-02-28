@@ -53,15 +53,26 @@
 
             }
 
+            .r_timer{
+
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-right: 5px;
+                font-size: 2rem;
+                color:  #006387;
+
+            }
+
 
             form {
 
                 width: 80%;
-                height: 100%;
+
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-end;
                 position: relative;
                 right: 6%;
 
@@ -86,6 +97,30 @@
                     border: none;
                     background-color: #006387;
                     margin-top: 30px;
+                }
+
+            }
+
+            .e_resend{
+
+                color: $black;
+                font-size: 0.8rem;
+                text-align: right;
+                direction: rtl;
+                margin-right: 5px;
+
+                .e_resend_btn{
+
+                    background-color: white;
+                    border: none;
+                    color: #006387;
+
+                    &:hover{
+
+                        font-size: 0.9rem;
+
+                    }
+
                 }
 
             }

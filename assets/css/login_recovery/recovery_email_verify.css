@@ -112,13 +112,19 @@ label {
         left: 35px; }
         .main .recovery_page .r_left_box .return_login .return_login_text {
           margin: 0px 0px 0px 5px; }
+      .main .recovery_page .r_left_box .r_timer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 5px;
+        font-size: 2rem;
+        color: #006387; }
       .main .recovery_page .r_left_box form {
         width: 80%;
-        height: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         position: relative;
         right: 6%; }
         .main .recovery_page .r_left_box form label {
@@ -131,6 +137,18 @@ label {
           border: none;
           background-color: #006387;
           margin-top: 30px; }
+      .main .recovery_page .r_left_box .e_resend {
+        color: #171717;
+        font-size: 0.8rem;
+        text-align: right;
+        direction: rtl;
+        margin-right: 5px; }
+        .main .recovery_page .r_left_box .e_resend .e_resend_btn {
+          background-color: white;
+          border: none;
+          color: #006387; }
+          .main .recovery_page .r_left_box .e_resend .e_resend_btn:hover {
+            font-size: 0.9rem; }
     .main .recovery_page .r_right_box {
       width: 50%;
       height: 100%;

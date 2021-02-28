@@ -21,20 +21,27 @@
         <div class="recovery_page">
 
             <div class="r_left_box" >
-    <!--    recovery email input    -->
-                <p class="text">.برای بازیابی رمز عبور ایمیل خود را وارد کنید</p>
+                
+                <!--    return page    -->
+
+                <a href="login.html" class="return_login">
+                    <i class="far fa-angle-left"></i>
+                    <p class="return_login_text">بازگشت</p>
+                </a>
+                
+                <!--    recovery email input    -->
                 <form action="recovery_email_verify.html">
 
-                    <label for="email">ایمیل</label>
+                    <label for="email">برای بازیابی رمز عبور، ایمیل خود را وارد کنید.</label>
                     <input type="email" id="email" class="e_input form-control">
                     <button type="submit" class="btn btn-primary">ارسال</button>
 
                 </form>
 
             </div>
-            <div class="r_right_box" style="background-image: url(../../assets/img/forgot-password.jpg)">
+            <div class="r_right_box">
 
-
+                <img src="../../assets/img/Forgot-password.gif" class="r_r_b_photo" alt="">
 
             </div>
             
