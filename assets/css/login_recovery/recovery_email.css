@@ -154,6 +154,7 @@ label {
   padding: 10px;
   position: absolute;
   left: 35px;
+  z-index: 10;
 }
 .main .recovery_page .r_left_box .return_login .return_login_text {
   margin: 0px 0px 0px 5px;
