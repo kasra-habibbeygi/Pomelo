@@ -6,7 +6,6 @@
 .error_box {
   display: none;
 }
-
 .error_box .error {
   width: 100%;
   display: flex;
@@ -18,17 +17,14 @@
   height: 40px;
   position: relative;
 }
-
 .error_box .error .text_error {
   margin: 0;
   padding-right: 30px;
 }
-
 .error_box .error .fa-exclamation-circle {
   position: absolute;
   right: 10px;
 }
-
 .error_box .error .fa-times {
   position: absolute;
   left: 10px;
@@ -57,27 +53,22 @@
   font-family: normal-font;
   src: url("../../font/Vazir.eot"), url("../../font/Vazir.ttf"), url("../../font/Vazir.woff"), url("../../font/Vazir.woff2");
 }
-
 @font-face {
   font-family: mediume-font;
   src: url("../../font/Vazir-Medium.eot"), url("../../font/Vazir-Medium.ttf"), url("../../font/Vazir-Medium.woff"), url("../../font/Vazir-Medium.woff2");
 }
-
 @font-face {
   font-family: bold-font;
   src: url("../../font/Vazir-Bold.eot"), url("../../font/Vazir-Bold.ttf"), url("../../font/Vazir-Bold.woff"), url("../../font/Vazir-Bold.woff2");
 }
-
 @font-face {
   font-family: light-font;
   src: url("../../font/Vazir-Light.eot"), url("../../font/Vazir-Light.ttf"), url("../../font/Vazir-Light.woff"), url("../../font/Vazir-Light.woff2");
 }
-
 @font-face {
   font-family: thin-font;
   src: url("../../font/Vazir-Thin.eot"), url("../../font/Vazir-Thin.ttf"), url("../../font/Vazir-Thin.woff"), url("../../font/Vazir-Thin.woff2");
 }
-
 body {
   overflow-x: hidden;
   font-family: normal-font;
@@ -128,7 +119,6 @@ label {
 .error_box {
   display: none;
 }
-
 .error_box .error {
   width: 100%;
   display: flex;
@@ -140,17 +130,14 @@ label {
   height: 40px;
   position: relative;
 }
-
 .error_box .error .text_error {
   margin: 0;
   padding-right: 30px;
 }
-
 .error_box .error .fa-exclamation-circle {
   position: absolute;
   right: 10px;
 }
-
 .error_box .error .fa-times {
   position: absolute;
   left: 10px;
@@ -175,7 +162,7 @@ label {
   color: #0fb900;
 }
 
-.main .l_left_b, .main .l_right_b {
+.main .l_right_b, .main .l_left_b {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,7 +177,6 @@ label {
   width: 100%;
   height: 100vh;
 }
-
 .main .login_page {
   width: 1000px;
   background: white;
@@ -201,29 +187,27 @@ label {
   overflow: hidden;
   padding: 30px 0 20px;
 }
-
 .main .l_left_b form {
   text-align: right;
   width: 65%;
 }
-
 .main .l_left_b form .form-group {
   margin-bottom: 20px;
 }
-
 .main .l_left_b form .form-group input {
   background: #E6E6E6;
 }
-
 .main .l_left_b form .form-check .cb_label {
   display: block;
   position: relative;
   padding-right: 35px;
   margin-bottom: 10px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
-
 .main .l_left_b form .form-check .cb_label .ck_input {
   position: absolute;
   opacity: 0;
@@ -231,15 +215,12 @@ label {
   height: 0;
   width: 0;
 }
-
 .main .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark {
   background-color: #006387;
 }
-
 .main .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark:after {
   display: block;
 }
-
 .main .l_left_b form .form-check .cb_label .checkmark {
   position: absolute;
   top: 2px;
@@ -249,13 +230,11 @@ label {
   width: 20px;
   background-color: #E6E6E6;
 }
-
 .main .l_left_b form .form-check .cb_label .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-
 .main .l_left_b form .form-check .cb_label .checkmark:after {
   left: 6.8px;
   top: 2.6px;
@@ -263,45 +242,39 @@ label {
   height: 12px;
   border: solid white;
   border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 .main .l_left_b form .btn {
   background: #006387;
   width: 100%;
   border: none;
 }
-
 .main .l_left_b form .forgot_pass {
   direction: rtl;
   color: #4b4b4b;
 }
-
 .main .l_left_b form .forgot_pass:hover {
   color: #006387;
 }
-
 .main .l_left_b form .input-group-prepend .input-group-text {
   background: white;
   border-radius: 0px 5px 5px 0;
   border-left: none;
   width: 45px;
 }
-
 .main .l_left_b form .input-group-prepend .input-group-text:hover {
   background: #006387;
   color: white;
 }
-
 .main .l_left_b form .input-group-prepend .input-group-text .fa-eye {
   display: none;
   padding-left: 1px;
 }
-
 .main .l_left_b form #password {
   border-radius: 5px 0px 0px 5px !important;
 }
-
 .main .l_right_b .r_gif {
   margin-right: 50px;
 }
@@ -310,86 +283,101 @@ label {
   .main .l_right_b .r_gif {
     width: 400px;
   }
+
   .main .login_page {
     width: 800px;
     padding: 50px 0px;
   }
+
   .main .l_left_b form {
     width: 75%;
   }
 }
-
 @media only screen and (max-width: 870px) {
   .main .login_page {
     width: 450px;
     padding: 30px 0;
     margin: 50px 0;
   }
+
   .main .l_right_b {
     order: 0;
     width: 100%;
   }
+
   .main .l_left_b {
     order: 1;
     width: 100%;
   }
+
   .main {
     height: auto;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
+
   .main .l_right_b .r_gif {
     margin-right: 0;
     padding-bottom: 20px;
     width: 300px;
   }
 }
-
 @media only screen and (max-width: 550px) {
   .main .login_page {
     width: 350px;
     padding: 15px 0;
     margin: 30px 0;
   }
+
   .main {
-    font-size: .8rem;
+    font-size: 0.8rem;
     height: 100vh;
   }
+
   .main .l_right_b .r_gif {
     width: 250px;
   }
+
   .main .l_left_b form .form-group input {
     height: 30px;
   }
+
   .main .l_left_b form .btn {
-    font-size: .8rem;
+    font-size: 0.8rem;
     height: 30px;
   }
+
   .main .l_left_b form .form-group {
     margin-bottom: 10px;
   }
+
   .main .l_left_b form .form-check .cb_label {
     margin: 20px 0;
   }
 }
-
 @media only screen and (max-width: 400px) {
   .main .login_page {
     width: 300px;
     padding: 15px 0;
     margin: 30px 0;
   }
+
   .main {
-    font-size: .8rem;
+    font-size: 0.8rem;
     height: 100vh;
   }
+
   .main .l_right_b .r_gif {
     width: 200px;
   }
+
   .main .l_left_b form .form-group input {
     height: 30px;
   }
+
   .main .l_left_b form .btn {
-    font-size: .8rem;
+    font-size: 0.8rem;
     height: 30px;
   }
 }
+
+/*# sourceMappingURL=login.css.map */
