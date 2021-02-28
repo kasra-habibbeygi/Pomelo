@@ -1,0 +1,52 @@
+
+.error_box {
+  display: none;
+  .error {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+    height: 40px;
+    position: relative;
+
+
+    .text_error {
+      margin: 0;
+      padding-right: 30px;
+    }
+
+    .fa-exclamation-circle {
+      position: absolute;
+      right: 10px;
+    }
+
+    .fa-times {
+      position: absolute;
+      left: 10px;
+      cursor: pointer;
+    }
+  }
+
+}
+
+  .danger_error{
+    background-color: $danger_bg;
+    border: 1px solid $danger_border;
+    color: $danger_color;
+  }
+
+  .warning_error{
+    background-color: $warning_bg;
+    border: 1px solid $warning_border;
+    color: $warning_color;
+  }
+
+  .success_danger{
+    background-color: $success_bg;
+    border: 1px solid $success_border;
+    color: $success_color;
+  }
+

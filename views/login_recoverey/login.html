@@ -20,18 +20,29 @@
 <section class="main">
     <div class="login_page">
         <div class="l_left_b">
-            <form>
+            <form action="">
+
+                <!--      errors         -->
+               <div class="error_box">
+                   <div class="error">
+                       <i class="fal fa-exclamation-circle"></i>
+                       <p class="text_error">دلام</p>
+                       <i class="fal fa-times"></i>
+                   </div>
+               </div>
+                <!--        errors        -->
                 <div class="form-group">
                     <label for="email">ایمیل</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
                 </div>
                 <div class="form-group">
                     <label for="password">کلمه عبور</label>
                     <div class="input-group mb-2">
                         <input type="password" class="form-control" id="password" >
                         <div class="input-group-prepend">
-                            <button type="button" class="input-group-text">
+                            <button type="button" class="input-group-text eye_show" >
                                 <i class="far fa-eye-slash"></i>
+                                <i class="fal fa-eye"></i>
                             </button>
                         </div>
                     </div>
@@ -43,7 +54,7 @@
                         <span class="checkmark"></span>
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary">ورود</button>
+                <button type="submit" class="btn btn-primary" id="submit_login">ورود</button>
                 <hr>
                 <a href="#" class="forgot_pass">
                     !رمز عبور خود را فراموش کرده ام
@@ -59,6 +70,8 @@
 <!--    js link     -->
 <script src="../../assets/js/general/jQuery.js"></script>
 <script src="../../assets/js/general/bootstrap.bundle.min.js"></script>
+<script src="../../assets/js/login_recovery/login.js"></script>
+<script src="../../assets/js/custom/errors.js"></script>
 
 
 </body>

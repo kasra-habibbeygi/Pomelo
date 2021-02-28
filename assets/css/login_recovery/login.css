@@ -2,6 +2,52 @@
   background: #00236b;
   background: linear-gradient(270deg, #00236b 0%, #005d82 47%, #008ba7 73%, #8decff 100%); }
 
+.error_box {
+  display: none;
+}
+.error_box .error {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  direction: rtl;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+  height: 40px;
+  position: relative;
+}
+.error_box .error .text_error {
+  margin: 0;
+  padding-right: 30px;
+}
+.error_box .error .fa-exclamation-circle {
+  position: absolute;
+  right: 10px;
+}
+.error_box .error .fa-times {
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+
+.danger_error {
+  background-color: #feebeb;
+  border: 1px solid #f19898;
+  color: #b90000;
+}
+
+.warning_error {
+  background-color: #FEF5EB;
+  border: 1px solid #f1bf98;
+  color: #B95000;
+}
+
+.success_danger {
+  background-color: #ebfeec;
+  border: 1px solid #98f19d;
+  color: #0fb900;
+}
+
 @font-face {
   font-family: normal-font;
   src: url("../../font/Vazir.eot");
