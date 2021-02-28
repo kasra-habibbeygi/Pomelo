@@ -28,25 +28,30 @@
                     <i class="far fa-angle-left"></i>
                     <p class="return_login_text">بازگشت</p>
                 </a>
-                
-                <!--    timer    -->
-                <div class="r_timer">
-                    
-                    <p class="min">2</p>
-                    <p>:</p>
-                    <p class="sec">00</p>
-                    
-                </div>
-                <!--    error box    -->
-                <div class="error_box">
-                </div>
+
 
                 <!--    recovery email input    -->
                 <form action="recovery_email_verify.html">
 
-                    <label for="email">کد تائیدیه را وارد کنید.</label>
-                    <input type="text" id="email" class="e_input form-control">
-                    <button type="submit" class="btn btn-primary">تائید</button>
+                    <div class="r_timer">
+                    
+                        <p class="min">2</p>
+                        <p>:</p>
+                        <p class="sec">00</p>
+                        
+                    </div>
+
+                    <div class="error_box" sty>
+                        <div class="error">
+                            <i class="fal fa-exclamation-circle"></i>
+                            <p class="text_error">دلام</p>
+                            <i class="fal fa-times"></i>
+                        </div>
+                    </div>
+
+                    <label for="verify">کد تائیدیه را وارد کنید.</label>
+                    <input type="text" id="verify" class="e_input form-control">
+                    <button type="submit" class="btn btn-primary verify">تائید</button>
 
                 </form>
                 <p class="e_resend">در صورتی که کد را دریافت نکرده اید، <button type="button" class="e_resend_btn">اینجا</button> کلیک کنید.</p>
@@ -67,6 +72,7 @@
 <script src="../../assets/js/general/jQuery.js"></script>
 <script src="../../assets/js/general/bootstrap.bundle.min.js"></script>
 <script src="../../assets/js/login_recovery/recovery_email_verify.js"></script>
+<script src="../../assets/js/custom/errors.js"></script>
 
 
 </body>

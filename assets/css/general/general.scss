@@ -2,43 +2,47 @@
 
 @font-face {
   font-family: $nf;
-  src: url("../../font/Vazir.eot");
-  src: url("../../font/Vazir.ttf");
-  src: url("../../font/Vazir.woff");
-  src: url("../../font/Vazir.woff2");
+  src: url("../../font/Vazir.eot"),
+    url("../../font/Vazir.ttf"),
+    url("../../font/Vazir.woff"),
+    url("../../font/Vazir.woff2");
 }
+
 @font-face {
   font-family: $mf;
-  src: url("../../font/Vazir-Medium.eot");
-  src: url("../../font/Vazir-Medium.ttf");
-  src: url("../../font/Vazir-Medium.woff");
-  src: url("../../font/Vazir-Medium.woff2");
+  src: url("../../font/Vazir-Medium.eot"),
+    url("../../font/Vazir-Medium.ttf"),
+    url("../../font/Vazir-Medium.woff"),
+    url("../../font/Vazir-Medium.woff2");
 }
+
 @font-face {
   font-family: $bf;
-  src: url("../../font/Vazir-Bold.eot");
-  src: url("../../font/Vazir-Bold.ttf");
-  src: url("../../font/Vazir-Bold.woff");
-  src: url("../../font/Vazir-Bold.woff2");
+  src: url("../../font/Vazir-Bold.eot"),
+    url("../../font/Vazir-Bold.ttf"),
+    url("../../font/Vazir-Bold.woff"),
+    url("../../font/Vazir-Bold.woff2");
 }
+
 @font-face {
   font-family: $lf;
-  src: url("../../font/Vazir-Light.eot");
-  src: url("../../font/Vazir-Light.ttf");
-  src: url("../../font/Vazir-Light.woff");
-  src: url("../../font/Vazir-Light.woff2");
+  src: url("../../font/Vazir-Light.eot"),
+    url("../../font/Vazir-Light.ttf"),
+    url("../../font/Vazir-Light.woff"),
+    url("../../font/Vazir-Light.woff2");
 }
+
 @font-face {
   font-family: $tf;
-  src: url("../../font/Vazir-Thin.eot");
-  src: url("../../font/Vazir-Thin.ttf");
-  src: url("../../font/Vazir-Thin.woff");
-  src: url("../../font/Vazir-Thin.woff2");
+  src: url("../../font/Vazir-Thin.eot"),
+    url("../../font/Vazir-Thin.ttf"),
+    url("../../font/Vazir-Thin.woff"),
+    url("../../font/Vazir-Thin.woff2");
 }
 
 //main general css
 
-body{
+body {
   overflow-x: hidden;
   font-family: $nf;
 }
@@ -53,19 +57,19 @@ button:focus {
   outline: none;
 }
 
-input{
+input {
   border-radius: 5px !important;
   border: 1px solid #e5e5e5 !important;
 }
 
-textarea{
+textarea {
   border-radius: 10px !important;
   border: 1px solid #e5e5e5 !important;
   line-height: 30px !important;
   height: 150px !important;
 }
 
-select{
+select {
   border-radius: 10px !important;
   border: 1px solid #e5e5e5 !important;
   text-align: center;
@@ -78,12 +82,10 @@ select{
   box-shadow: 0px 0px 5px 2px #00000015 !important;
 }
 
-.form-control{
+.form-control {
   color: #535353 !important;
 }
 
 label {
   color: #626262 !important;
 }
-
-

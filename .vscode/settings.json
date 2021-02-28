@@ -12,7 +12,7 @@
    "liveServer.settings.donotShowInfoMsg": true,
    "liveSassCompile.settings.formats": [
        {
-           "format": "expended",
+           "format": "expanded",
            "extensionName": ".css",
            "savePath": null
        }
