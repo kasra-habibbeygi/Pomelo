@@ -1,0 +1,103 @@
+
+@media only screen and (max-width: 1100px) {
+  .main .l_right_b .r_gif{
+    width: 400px;
+  }
+  .main .login_page{
+    width: 800px;
+    padding: 50px 0px;
+  }
+  .main .l_left_b form{
+    width: 75%;
+  }
+
+}
+
+@media only screen and (max-width: 870px) {
+  .main .login_page{
+    width: 450px;
+    padding: 30px 0;
+    margin: 50px 0;
+  }
+  .main .l_right_b{
+    order: 0;
+    width: 100%;
+  }
+  .main .l_left_b{
+    order: 1;
+    width: 100%;
+  }
+
+  .main{
+    height: auto;
+    font-size: .9rem;
+  }
+  .main .l_right_b .r_gif{
+    margin-right: 0;
+    padding-bottom: 20px;
+    width: 300px;
+  }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+  .main .login_page{
+    width: 350px;
+    padding: 15px 0;
+    margin: 30px 0;
+  }
+
+
+  .main{
+    font-size: .8rem;
+    height: 100vh;
+  }
+  .main .l_right_b .r_gif{
+    width: 250px;
+  }
+
+  .main .l_left_b form .form-group input{
+    height: 30px;
+  }
+  .main .l_left_b form .btn{
+    font-size: .8rem;
+    height: 30px;
+  }
+  .main .l_left_b form .form-group {
+    margin-bottom: 10px;
+  }
+
+  .main .l_left_b form .form-check .cb_label{
+    margin: 20px 0;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .main .login_page{
+    width: 300px;
+    padding: 15px 0;
+    margin: 30px 0;
+  }
+
+
+  .main{
+    font-size: .8rem;
+    height: 100vh;
+  }
+  .main .l_right_b .r_gif{
+    width: 200px;
+  }
+
+  .main .l_left_b form .form-group input{
+    height: 30px;
+  }
+
+  .main .l_left_b form .btn{
+    font-size: .8rem;
+    height: 30px;
+  }
+}
+
+

@@ -3,6 +3,52 @@
   background: linear-gradient(270deg, #00236b 0%, #005d82 47%, #008ba7 73%, #8decff 100%);
 }
 
+.error_box {
+  display: none;
+}
+.error_box .error {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  direction: rtl;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+  height: 40px;
+  position: relative;
+}
+.error_box .error .text_error {
+  margin: 0;
+  padding-right: 30px;
+}
+.error_box .error .fa-exclamation-circle {
+  position: absolute;
+  right: 10px;
+}
+.error_box .error .fa-times {
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+
+.danger_error {
+  background-color: #feebeb;
+  border: 1px solid #f19898;
+  color: #b90000;
+}
+
+.warning_error {
+  background-color: #FEF5EB;
+  border: 1px solid #f1bf98;
+  color: #B95000;
+}
+
+.success_danger {
+  background-color: #ebfeec;
+  border: 1px solid #98f19d;
+  color: #0fb900;
+}
+
 @font-face {
   font-family: normal-font;
   src: url("../../font/Vazir.eot");
@@ -85,6 +131,52 @@ label {
   color: #626262 !important;
 }
 
+.error_box {
+  display: none;
+}
+.error_box .error {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  direction: rtl;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+  height: 40px;
+  position: relative;
+}
+.error_box .error .text_error {
+  margin: 0;
+  padding-right: 30px;
+}
+.error_box .error .fa-exclamation-circle {
+  position: absolute;
+  right: 10px;
+}
+.error_box .error .fa-times {
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+
+.danger_error {
+  background-color: #feebeb;
+  border: 1px solid #f19898;
+  color: #b90000;
+}
+
+.warning_error {
+  background-color: #FEF5EB;
+  border: 1px solid #f1bf98;
+  color: #B95000;
+}
+
+.success_danger {
+  background-color: #ebfeec;
+  border: 1px solid #98f19d;
+  color: #0fb900;
+}
+
 .main .l_right_b, .main .l_left_b {
   display: flex;
   justify-content: center;
@@ -101,7 +193,7 @@ label {
   height: 100vh;
 }
 .main .login_page {
-  width: 65%;
+  width: 1000px;
   background: white;
   border-radius: 10px;
   display: flex;
@@ -159,8 +251,8 @@ label {
   display: none;
 }
 .main .l_left_b form .form-check .cb_label .checkmark:after {
-  left: 6.7px;
-  top: 3.5px;
+  left: 6.8px;
+  top: 2.6px;
   width: 6px;
   height: 12px;
   border: solid white;
@@ -185,16 +277,122 @@ label {
   background: white;
   border-radius: 0px 5px 5px 0;
   border-left: none;
+  width: 45px;
 }
 .main .l_left_b form .input-group-prepend .input-group-text:hover {
   background: #006387;
   color: white;
+}
+.main .l_left_b form .input-group-prepend .input-group-text .fa-eye {
+  display: none;
+  padding-left: 1px;
 }
 .main .l_left_b form #password {
   border-radius: 5px 0px 0px 5px !important;
 }
 .main .l_right_b .r_gif {
   margin-right: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .main .l_right_b .r_gif {
+    width: 400px;
+  }
+
+  .main .login_page {
+    width: 800px;
+    padding: 50px 0px;
+  }
+
+  .main .l_left_b form {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .main .login_page {
+    width: 450px;
+    padding: 30px 0;
+    margin: 50px 0;
+  }
+
+  .main .l_right_b {
+    order: 0;
+    width: 100%;
+  }
+
+  .main .l_left_b {
+    order: 1;
+    width: 100%;
+  }
+
+  .main {
+    height: auto;
+    font-size: 0.9rem;
+  }
+
+  .main .l_right_b .r_gif {
+    margin-right: 0;
+    padding-bottom: 20px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main .login_page {
+    width: 350px;
+    padding: 15px 0;
+    margin: 30px 0;
+  }
+
+  .main {
+    font-size: 0.8rem;
+    height: 100vh;
+  }
+
+  .main .l_right_b .r_gif {
+    width: 250px;
+  }
+
+  .main .l_left_b form .form-group input {
+    height: 30px;
+  }
+
+  .main .l_left_b form .btn {
+    font-size: 0.8rem;
+    height: 30px;
+  }
+
+  .main .l_left_b form .form-group {
+    margin-bottom: 10px;
+  }
+
+  .main .l_left_b form .form-check .cb_label {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main .login_page {
+    width: 300px;
+    padding: 15px 0;
+    margin: 30px 0;
+  }
+
+  .main {
+    font-size: 0.8rem;
+    height: 100vh;
+  }
+
+  .main .l_right_b .r_gif {
+    width: 200px;
+  }
+
+  .main .l_left_b form .form-group input {
+    height: 30px;
+  }
+
+  .main .l_left_b form .btn {
+    font-size: 0.8rem;
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=login.css.map */
