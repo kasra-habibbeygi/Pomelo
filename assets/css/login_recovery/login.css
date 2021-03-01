@@ -162,7 +162,7 @@ label {
   color: #0fb900;
 }
 
-.main .l_right_b, .main .l_left_b {
+.main .login_page .l_right_b, .main .login_page .l_left_b {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,8 +174,10 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 .main .login_page {
   width: 1000px;
@@ -187,17 +189,17 @@ label {
   overflow: hidden;
   padding: 30px 0 20px;
 }
-.main .l_left_b form {
+.main .login_page .l_left_b form {
   text-align: right;
   width: 65%;
 }
-.main .l_left_b form .form-group {
+.main .login_page .l_left_b form .form-group {
   margin-bottom: 20px;
 }
-.main .l_left_b form .form-group input {
+.main .login_page .l_left_b form .form-group input {
   background: #E6E6E6;
 }
-.main .l_left_b form .form-check .cb_label {
+.main .login_page .l_left_b form .form-check .cb_label {
   display: block;
   position: relative;
   padding-right: 35px;
@@ -208,20 +210,20 @@ label {
   -ms-user-select: none;
   user-select: none;
 }
-.main .l_left_b form .form-check .cb_label .ck_input {
+.main .login_page .l_left_b form .form-check .cb_label .ck_input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.main .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark {
+.main .login_page .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark {
   background-color: #006387;
 }
-.main .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark:after {
+.main .login_page .l_left_b form .form-check .cb_label .ck_input:checked ~ .checkmark:after {
   display: block;
 }
-.main .l_left_b form .form-check .cb_label .checkmark {
+.main .login_page .l_left_b form .form-check .cb_label .checkmark {
   position: absolute;
   top: 2px;
   right: 0;
@@ -230,12 +232,12 @@ label {
   width: 20px;
   background-color: #E6E6E6;
 }
-.main .l_left_b form .form-check .cb_label .checkmark:after {
+.main .login_page .l_left_b form .form-check .cb_label .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.main .l_left_b form .form-check .cb_label .checkmark:after {
+.main .login_page .l_left_b form .form-check .cb_label .checkmark:after {
   left: 6.8px;
   top: 2.6px;
   width: 6px;
@@ -246,37 +248,43 @@ label {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.main .l_left_b form .btn {
+.main .login_page .l_left_b form .btn {
   background: #006387;
   width: 100%;
   border: none;
 }
-.main .l_left_b form .forgot_pass {
+.main .login_page .l_left_b form .forgot_pass {
   direction: rtl;
   color: #4b4b4b;
 }
-.main .l_left_b form .forgot_pass:hover {
+.main .login_page .l_left_b form .forgot_pass:hover {
   color: #006387;
 }
-.main .l_left_b form .input-group-prepend .input-group-text {
+.main .login_page .l_left_b form .input-group-prepend .input-group-text {
   background: white;
   border-radius: 0px 5px 5px 0;
   border-left: none;
   width: 45px;
 }
-.main .l_left_b form .input-group-prepend .input-group-text:hover {
+.main .login_page .l_left_b form .input-group-prepend .input-group-text:hover {
   background: #006387;
   color: white;
 }
-.main .l_left_b form .input-group-prepend .input-group-text .fa-eye {
+.main .login_page .l_left_b form .input-group-prepend .input-group-text .fa-eye {
   display: none;
   padding-left: 1px;
 }
-.main .l_left_b form #password {
+.main .login_page .l_left_b form #password {
   border-radius: 5px 0px 0px 5px !important;
 }
-.main .l_right_b .r_gif {
+.main .login_page .l_right_b .r_gif {
   margin-right: 50px;
+}
+.main .cpy_right {
+  direction: rtl;
+  position: absolute;
+  bottom: 20px;
+  color: white;
 }
 
 @media only screen and (max-width: 1100px) {
