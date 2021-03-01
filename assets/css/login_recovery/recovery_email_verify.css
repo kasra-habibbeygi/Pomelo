@@ -6,6 +6,7 @@
 .error_box {
   display: none;
 }
+
 .error_box .error {
   width: 100%;
   display: flex;
@@ -17,14 +18,17 @@
   height: 40px;
   position: relative;
 }
+
 .error_box .error .text_error {
   margin: 0;
   padding-right: 30px;
 }
+
 .error_box .error .fa-exclamation-circle {
   position: absolute;
   right: 10px;
 }
+
 .error_box .error .fa-times {
   position: absolute;
   left: 10px;
@@ -54,26 +58,32 @@
     font-size: 0.8rem;
   }
 }
+
 @font-face {
   font-family: normal-font;
   src: url("../../font/Vazir.eot"), url("../../font/Vazir.ttf"), url("../../font/Vazir.woff"), url("../../font/Vazir.woff2");
 }
+
 @font-face {
   font-family: mediume-font;
   src: url("../../font/Vazir-Medium.eot"), url("../../font/Vazir-Medium.ttf"), url("../../font/Vazir-Medium.woff"), url("../../font/Vazir-Medium.woff2");
 }
+
 @font-face {
   font-family: bold-font;
   src: url("../../font/Vazir-Bold.eot"), url("../../font/Vazir-Bold.ttf"), url("../../font/Vazir-Bold.woff"), url("../../font/Vazir-Bold.woff2");
 }
+
 @font-face {
   font-family: light-font;
   src: url("../../font/Vazir-Light.eot"), url("../../font/Vazir-Light.ttf"), url("../../font/Vazir-Light.woff"), url("../../font/Vazir-Light.woff2");
 }
+
 @font-face {
   font-family: thin-font;
   src: url("../../font/Vazir-Thin.eot"), url("../../font/Vazir-Thin.ttf"), url("../../font/Vazir-Thin.woff"), url("../../font/Vazir-Thin.woff2");
 }
+
 body {
   overflow-x: hidden;
   font-family: normal-font;
@@ -129,6 +139,7 @@ label {
   justify-content: center;
   align-items: center;
 }
+
 .main .recovery_page {
   width: 921.6px;
   height: 460.8px;
@@ -137,6 +148,7 @@ label {
   display: flex;
   flex-wrap: wrap;
 }
+
 .main .recovery_page .r_left_box {
   width: 50%;
   padding: 30px 0 0 20px;
@@ -146,6 +158,7 @@ label {
   align-content: center;
   position: relative;
 }
+
 .main .recovery_page .r_left_box .return_login {
   width: 70px;
   height: 35px;
@@ -161,9 +174,11 @@ label {
   left: 35px;
   z-index: 10;
 }
+
 .main .recovery_page .r_left_box .return_login .return_login_text {
   margin: 0px 0px 0px 5px;
 }
+
 .main .recovery_page .r_left_box .resend {
   height: 36px;
   display: flex;
@@ -172,12 +187,14 @@ label {
   cursor: not-allowed;
   opacity: 0.2;
 }
+
 .main .recovery_page .r_left_box .r_timer {
   display: flex;
   color: white;
   direction: ltr;
   text-align: right;
 }
+
 .main .recovery_page .r_left_box form {
   width: 80%;
   display: flex;
@@ -187,19 +204,35 @@ label {
   position: relative;
   right: 6%;
 }
+
+.main .recovery_page .r_left_box form .f_back {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+.main .recovery_page .r_left_box form .f_back .return_login_text {
+  margin: 0px 0px 0px 5px;
+}
+
 .main .recovery_page .r_left_box form label {
   text-align: right;
   direction: rtl;
 }
+
 .main .recovery_page .r_left_box form .e_input {
   background-color: #E6E6E6;
 }
+
 .main .recovery_page .r_left_box form .btn {
   width: 100%;
   border: none;
   background-color: #006387;
   margin-top: 30px;
 }
+
 .main .recovery_page .r_left_box .e_resend {
   color: #171717;
   font-size: 0.8rem;
@@ -207,23 +240,28 @@ label {
   direction: rtl;
   margin-right: 5px;
 }
+
 .main .recovery_page .r_left_box .e_resend .e_resend_btn {
   background-color: white;
   border: none;
   color: #006387;
 }
+
 .main .recovery_page .r_left_box .e_resend .e_resend_btn:hover {
   font-size: 0.9rem;
 }
+
 .main .recovery_page .r_right_box {
   width: 50%;
   border-radius: 0 10px 10px 0;
 }
+
 .main .recovery_page .r_right_box .r_r_b_photo {
   width: 100%;
   height: 100%;
   border-radius: 0 10px 10px 0;
 }
+
 .main .cpy_right {
   direction: rtl;
   margin-top: 30px;
@@ -240,56 +278,54 @@ hr {
     height: 360.8px;
   }
 }
+
 @media only screen and (max-width: 900px) {
   .main .recovery_page {
     width: 600px;
     height: 360.8px;
   }
-
   .main .recovery_page .r_left_box form label {
     font-size: 0.8rem;
   }
-
   .main .recovery_page .r_left_box form .btn {
     font-size: 0.8rem;
   }
-
   .main .recovery_page .r_left_box .return_login {
     width: 50px;
     height: 35px;
     font-size: 0.6rem;
   }
-
   .main .recovery_page .r_left_box .resend {
     height: 31.2px;
   }
 }
+
 @media only screen and (max-width: 720px) {
   .main .recovery_page {
     flex-direction: column;
     width: 60%;
     height: unset;
   }
-
+  .main .recovery_page .r_left_box form .f_back {
+    display: flex;
+    height: 31.2px;
+    margin-top: 10px;
+  }
   .main .cpy_right {
     width: 90%;
     text-align: center;
   }
-
   .main .recovery_page .r_left_box form .resend {
     margin-top: 10px;
   }
-
   .main .recovery_page .r_right_box {
     width: 100%;
     order: 1;
   }
-
   .main .recovery_page .r_right_box .r_r_b_photo {
     margin-left: 15%;
     width: 70%;
   }
-
   .main .recovery_page .r_left_box {
     width: 80%;
     margin-bottom: 100px;
@@ -301,24 +337,13 @@ hr {
     width: 100%;
     right: 0px;
   }
-
   .main .recovery_page .r_left_box .return_login {
-    width: 100%;
-    font-size: 0.8rem;
-    top: 180px;
-    border-radius: 4px;
-    left: 0px;
-    height: unset;
-    padding: 6px;
-  }
-  .main .recovery_page .r_left_box .return_login i {
     display: none;
   }
 }
+
 @media only screen and (max-width: 720px) {
   .main .recovery_page {
     width: 90%;
   }
 }
-
-/*# sourceMappingURL=recovery_email_verify.css.map */

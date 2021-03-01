@@ -30,7 +30,7 @@
             position: relative;
 
 
-            .return_login{
+            .return_login {
 
                 width: 70px;
                 height: 35px;
@@ -46,7 +46,7 @@
                 left: 35px;
                 z-index: 10;
 
-                .return_login_text{
+                .return_login_text {
 
                     margin: 0px 0px 0px 5px;
 
@@ -66,6 +66,20 @@
                 position: relative;
                 right: 6%;
 
+                .f_back {
+
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 0.8rem;
+                    padding: 10px;
+                    .return_login_text {
+
+                        margin: 0px 0px 0px 5px;
+    
+                    }
+
+                }
 
 
                 label {
@@ -109,18 +123,20 @@
         }
 
     }
-    .cpy_right{
-        direction: rtl;;
+
+    .cpy_right {
+        direction: rtl;
+        ;
         margin-top: 30px;
         color: $white;
-      }
+    }
 
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1100px) {
 
-    
-    .main .recovery_page{
+
+    .main .recovery_page {
 
         width: 721.6px;
         height: 360.8px;
@@ -128,93 +144,99 @@
     }
 
 }
-@media only screen and (max-width: 900px){
 
-    .main .recovery_page{
+@media only screen and (max-width: 900px) {
+
+    .main .recovery_page {
 
         width: 600px;
         height: 360.8px;
 
     }
-    
-    .main .recovery_page .r_left_box form label{
-        
+
+    .main .recovery_page .r_left_box form label {
+
         font-size: 0.8rem;
-        
+
     }
-    .main .recovery_page .r_left_box form .btn{
-        
+
+    .main .recovery_page .r_left_box form .btn {
+
         font-size: 0.8rem;
-        
+
     }
-    .main .recovery_page .r_left_box .return_login{
-        
+
+    .main .recovery_page .r_left_box .return_login {
+
         width: 50px;
         height: 35px;
         font-size: 0.6rem;
-        
-        
+
+
     }
-    
+
 }
-@media only screen and (max-width: 720px){
-    
-    .main .recovery_page{
-        
+
+@media only screen and (max-width: 720px) {
+
+    .main .recovery_page .r_left_box form .f_back{
+
+        display: flex;
+        height: 31.2px;
+        margin-top: 10px;
+
+
+    }
+    .main .recovery_page {
+
         flex-direction: column;
         width: 60%;
         height: unset;
-        
+
     }
-    .main .cpy_right{
+
+    .main .cpy_right {
 
         width: 90%;
         text-align: center;
 
     }
+
     .main .recovery_page .r_right_box {
         width: 100%;
         order: 1;
     }
+
     .main .recovery_page .r_right_box .r_r_b_photo {
         margin-left: 15%;
         width: 70%;
 
     }
+
     .main .recovery_page .r_left_box {
         width: 80%;
         margin-bottom: 100px;
         order: 2;
         margin-left: 10%;
         padding: 0;
-        form{
+
+        form {
 
             width: 100%;
             right: 0px;
 
         }
     }
+
     .main .recovery_page .r_left_box .return_login {
-        width: 100%;
-        font-size: 0.8rem;
-        top: 135px;
-        border-radius: 4px;
-        left: 0px;
-        height: unset;
-        padding: 6px;
-
-        i{
-
-            display: none;
-
-        }
-
+    display: none;
     }
 
 }
-@media only screen and (max-width: 720px){
 
-    .main .recovery_page{
+@media only screen and (max-width: 720px) {
+
+    .main .recovery_page {
 
         width: 90%;
 
