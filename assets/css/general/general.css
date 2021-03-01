@@ -48,6 +48,12 @@
   color: #0fb900;
 }
 
+@media only screen and (max-width: 900px) {
+  .error_box .error p, .error_box .error i {
+    font-size: 0.8rem;
+  }
+}
+
 @font-face {
   font-family: normal-font;
   src: url("../../font/Vazir.eot"), url("../../font/Vazir.ttf"), url("../../font/Vazir.woff"), url("../../font/Vazir.woff2");

@@ -50,3 +50,11 @@
     color: $success_color;
   }
 
+  @media only screen and (max-width: 900px){
+  
+  .error_box .error p , .error_box .error i{
+
+    font-size: 0.8rem;
+
+}
+}

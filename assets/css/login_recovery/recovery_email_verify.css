@@ -53,6 +53,12 @@
   color: #0fb900;
 }
 
+@media only screen and (max-width: 900px) {
+  .error_box .error p, .error_box .error i {
+    font-size: 0.8rem;
+  }
+}
+
 @font-face {
   font-family: normal-font;
   src: url("../../font/Vazir.eot"), url("../../font/Vazir.ttf"), url("../../font/Vazir.woff"), url("../../font/Vazir.woff2");
@@ -149,6 +155,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   position: relative;
 }
 
@@ -172,13 +179,20 @@ label {
   margin: 0px 0px 0px 5px;
 }
 
-.main .recovery_page .r_left_box .r_timer {
-  width: 100%;
+.main .recovery_page .r_left_box .resend {
+  height: 36px;
   display: flex;
   justify-content: center;
-  margin-right: 5px;
-  font-size: 2rem;
-  color: #006387;
+  direction: rtl;
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+.main .recovery_page .r_left_box .r_timer {
+  display: flex;
+  color: white;
+  direction: ltr;
+  text-align: right;
 }
 
 .main .recovery_page .r_left_box form {
@@ -272,6 +286,9 @@ hr {
     width: 60%;
     height: unset;
   }
+  .main .recovery_page .r_left_box form .resend {
+    margin-top: 10px;
+  }
   .main .recovery_page .r_right_box {
     width: 100%;
     order: 1;
@@ -294,7 +311,7 @@ hr {
   .main .recovery_page .r_left_box .return_login {
     width: 100%;
     font-size: 0.8rem;
-    top: 135px;
+    top: 180px;
     border-radius: 4px;
     left: 0px;
     height: unset;
