@@ -6,6 +6,7 @@
     height: 100vh;
     @extend %gradient;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -21,7 +22,6 @@
         .r_left_box {
 
             width: 50%;
-            height: 100%;
             padding: 30px 0 0 20px;
             display: flex;
             flex-wrap: wrap;
@@ -96,7 +96,6 @@
         .r_right_box {
 
             width: 50%;
-            height: 100%;
             border-radius: 0 10px 10px 0;
 
             .r_r_b_photo {
@@ -110,6 +109,11 @@
         }
 
     }
+    .cpy_right{
+        direction: rtl;;
+        margin-top: 30px;
+        color: $white;
+      }
 
 }
 
@@ -161,6 +165,12 @@
         width: 60%;
         height: unset;
         
+    }
+    .main .cpy_right{
+
+        width: 90%;
+        text-align: center;
+
     }
     .main .recovery_page .r_right_box {
         width: 100%;
