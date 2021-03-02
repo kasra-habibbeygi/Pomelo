@@ -1,6 +1,7 @@
 .error_box {
   display: none;
 }
+
 .error_box .error {
   width: 100%;
   display: flex;
@@ -12,14 +13,17 @@
   height: 40px;
   position: relative;
 }
+
 .error_box .error .text_error {
   margin: 0;
   padding-right: 30px;
 }
+
 .error_box .error .fa-exclamation-circle {
   position: absolute;
   right: 10px;
 }
+
 .error_box .error .fa-times {
   position: absolute;
   left: 10px;
@@ -49,26 +53,32 @@
     font-size: 0.8rem;
   }
 }
+
 @font-face {
   font-family: normal-font;
   src: url("../../font/Vazir.eot"), url("../../font/Vazir.ttf"), url("../../font/Vazir.woff"), url("../../font/Vazir.woff2");
 }
+
 @font-face {
   font-family: mediume-font;
   src: url("../../font/Vazir-Medium.eot"), url("../../font/Vazir-Medium.ttf"), url("../../font/Vazir-Medium.woff"), url("../../font/Vazir-Medium.woff2");
 }
+
 @font-face {
   font-family: bold-font;
   src: url("../../font/Vazir-Bold.eot"), url("../../font/Vazir-Bold.ttf"), url("../../font/Vazir-Bold.woff"), url("../../font/Vazir-Bold.woff2");
 }
+
 @font-face {
   font-family: light-font;
   src: url("../../font/Vazir-Light.eot"), url("../../font/Vazir-Light.ttf"), url("../../font/Vazir-Light.woff"), url("../../font/Vazir-Light.woff2");
 }
+
 @font-face {
   font-family: thin-font;
   src: url("../../font/Vazir-Thin.eot"), url("../../font/Vazir-Thin.ttf"), url("../../font/Vazir-Thin.woff"), url("../../font/Vazir-Thin.woff2");
 }
+
 body {
   overflow-x: hidden;
   font-family: normal-font;
@@ -115,5 +125,3 @@ select {
 label {
   color: #626262 !important;
 }
-
-/*# sourceMappingURL=dashboard.css.map */
