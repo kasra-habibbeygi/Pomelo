@@ -26,21 +26,18 @@ $('#submit_login').click(function (e) {
     if (inp_email == "") {
 
         $('.error_box').fadeIn();
-        $('.error').addClass('warning_error ');
         $('.error .text_error').text('لطفا ایمیل خود را وارد کنید!');
         e.preventDefault();
 
     } else if (inp_pass == "") {
 
         $('.error_box').fadeIn();
-        $('.error').addClass('warning_error ');
         $('.error .text_error').text('لطفا پسورد خود را وارد کنید!');
         e.preventDefault();
 
     } else if (inp_pass.length < 5) {
 
         $('.error_box').fadeIn();
-        $('.error').addClass('warning_error ');
         $('.error .text_error').text('پسورد نمیتواند کمتر از 5 کلمه باشد!');
         e.preventDefault();
 
@@ -53,3 +50,18 @@ $('.fa-times').click(function () {
     $('.error_box').fadeOut();
     
 })
+
+// backend error
+if($('.error_box').hasClass('IR')){
+
+    $('.error_box').fadeIn();
+    $('.error .text_error').text('مشخصات وارد شده اشتباه است .');
+    e.preventDefault();
+
+}else if($('.error_box').hasClass('UNF')){
+
+    $('.error_box').fadeIn();
+    $('.error .text_error').text('کاربر یافت نشد .');
+    e.preventDefault();
+
+}
