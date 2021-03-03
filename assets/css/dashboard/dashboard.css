@@ -1,3 +1,8 @@
+.main .dashboard .left_box .nav_bar {
+  background: #00236b;
+  background: linear-gradient(270deg, #00236b 0%, #005d82 47%, #a5dfea 73%, #8decff 100%);
+}
+
 .error_box {
   display: none;
 }
@@ -131,4 +136,33 @@ select {
 label {
   color: #626262 !important;
 }
-/*# sourceMappingURL=dashboard.css.map */
+
+.main .dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main .dashboard .left_box {
+  width: 85%;
+}
+.main .dashboard .left_box .nav_bar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+}
+.main .dashboard .left_box .content {
+  background-color: #dedede;
+  height: 150vh;
+}
+.main .dashboard .right_box {
+  width: 15%;
+  height: 100vh;
+  background-color: #003873;
+  position: fixed;
+  right: 0;
+}
+.main .dashboard .right_box .logo {
+  width: 100%;
+  background-color: #002f60;
+  height: 60px;
+}
