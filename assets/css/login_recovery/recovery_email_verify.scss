@@ -90,7 +90,20 @@
                 position: relative;
                 right: 6%;
 
+                .f_back {
 
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 0.8rem;
+                    padding: 10px;
+                    .return_login_text {
+
+                        margin: 0px 0px 0px 5px;
+    
+                    }
+
+                }
 
                 label {
 
@@ -227,6 +240,14 @@ hr {
         height: unset;
 
     }
+    .main .recovery_page .r_left_box form .f_back{
+
+        display: flex;
+        height: 31.2px;
+        margin-top: 10px;
+
+
+    }
     .main .cpy_right{
 
         width: 90%;
@@ -266,21 +287,8 @@ hr {
     }
 
     .main .recovery_page .r_left_box .return_login {
-        width: 100%;
-        font-size: 0.8rem;
-        top: 180px;
-        border-radius: 4px;
-        left: 0px;
-        height: unset;
-        padding: 6px;
-
-        i {
-
-            display: none;
-
+        display: none;
         }
-
-    }
 
 }
 

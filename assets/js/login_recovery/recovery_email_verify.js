@@ -42,38 +42,12 @@ $('.verify').click(function (e) {
         e.preventDefault();
 
     }
-    if ($(".error_box").css("display") != "none") {
-        if(width_size <= 720){
-    
-            $(".responisive_back").css("top" , "243px");
-    
-        }
-    }
+ 
 });
 
 
 $('.fa-times').click(function () {
 
     $('.error_box').fadeOut();
-    setTimeout(function(){
-        if(width_size <= 720){
-        
-    
-            $(".responisive_back").css("top" , "180px");
-    
-        }
-    } , 400)
-    
+
 })
-$(window).resize(function(){
-
-    if ($(".error_box").css("display") != "none") {
-        
-        if(width_size <= 720){
-            
-            $(".responisive_back").css("top" , "243px");
-            
-        }
-    }
-
-});
