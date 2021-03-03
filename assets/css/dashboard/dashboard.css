@@ -9,12 +9,17 @@
 
 .error_box .error {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   direction: rtl;
   border-radius: 5px;
   margin-bottom: 20px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 40px;
   position: relative;
 }
@@ -120,7 +125,8 @@ select {
   color: #495057;
   border-color: transparent !important;
   outline: 0;
-  box-shadow: 0px 0px 5px 2px #00000015 !important;
+  -webkit-box-shadow: 0px 0px 5px 2px #00000015 !important;
+          box-shadow: 0px 0px 5px 2px #00000015 !important;
 }
 
 .form-control {
@@ -130,7 +136,6 @@ select {
 label {
   color: #626262 !important;
 }
-<<<<<<< HEAD
 
 .main .dashboard {
   display: flex;
@@ -161,7 +166,3 @@ label {
   background-color: #002f60;
   height: 60px;
 }
-
-/*# sourceMappingURL=dashboard.css.map */
-=======
->>>>>>> 5bfe20e45d21bd2bdab479be88bbeedaba2b8c92
