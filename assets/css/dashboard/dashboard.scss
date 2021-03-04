@@ -6,9 +6,109 @@
     flex-wrap: wrap;
     width: 100%;
 
-    .content {
-      background-color: #dedede;
-      height: 150vh;
+    .left_box{
+      .content {
+        background-color: #dedede;
+        height: 150vh;
+      }
+    }
+
+    
+
+    .right_box {
+      width: 15%;
+      height: 100vh;
+      background-color: #003873;
+      position: fixed;
+      right: 0;
+    
+      .logo {
+        width: 100%;
+        background-color: #002f60;
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+  
+        .img_of_logo{
+          height: 55px;
+        }
+  
+        .name_of_page{
+          color: $white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+          
+          h1{
+            font-size: 1.2rem;
+            margin-bottom: 0;
+          }
+          p{
+            margin-bottom: 0;
+          }
+  
+        }
+  
+      }
+  
+      .side_bar_menu{
+        color: $white;
+        direction: rtl;
+        text-align: right;
+       
+        ul{
+          list-style-type: none;
+         
+          padding-inline-start: 0px;
+
+          p{
+            text-align: center;
+            font-family: $bf;
+            margin-top: 20px;
+            color: #8DECFF;
+            margin-bottom: 0;
+          }
+          .li_menu{
+            padding-inline-start: 20px;
+            font-family: $tf;
+            margin-top: 10px;
+            
+
+            .link_s_m{
+              color: $white;
+              .fa-chevron-down{
+                position: absolute;
+                left: 20px;
+              }
+
+              .text_menu{
+                margin-right: 5px;
+              }
+            }
+
+            ul{
+              padding-inline-start: 40px;
+              li{
+                list-style-type: disc;
+                margin-top: 10px;
+
+                .link_style{
+                  color: $white;
+                  font-size: .9rem;
+                }
+              }
+            }
+
+          
+            
+          }
+  
+        } 
+      }
     }
 
   }
