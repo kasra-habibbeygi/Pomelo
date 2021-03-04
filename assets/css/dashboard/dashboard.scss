@@ -1,35 +1,148 @@
 @import "../general/general";
 
-.main{
-  .dashboard{
+.main {
+  .dashboard {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 
-    .left_box{
+    .left_box {
       width: 85%;
 
-      .nav_bar{
-        width: 100%;
+      .nav_bar {
+        width: 85%;
         height: 60px;
         @extend %gradient;
         position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px;
+
+        ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+
+          &:first-child {
+
+            color: #00236B;
+
+          }
+
+          &:last-child {
+
+            color: #8DECFF;
+
+          }
+
+          li {
+
+            font-size: 2rem;
+            margin: 0 20px;
+            position: relative;
+
+            .dropDown {
+
+              width: max-content;
+              border: 1px solid rgb(148, 148, 148);
+              border-radius: 20px;
+              position: absolute;
+              top: 75px;
+              left: -30px;
+
+              .userDropDown {
+
+                left: -20px;
+
+              }
+
+              .dropDown_shape {
+
+                width: 20px;
+                height: 20px;
+                @include transform(rotate(45deg));
+                border-top: 1px solid rgb(148, 148, 148);
+                border-left: 1px solid rgb(148, 148, 148);
+                position: absolute;
+                left: 34px;
+                top: -11px;
+                background-color: #DEDEDE;
+
+              }
+
+              .dropDown_box {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+
+
+                .dropDown_box_items {
+
+                  color: $black;
+                  margin: 0px 5px;
+                  font-size: 1rem;
+                  padding: 20px;
+                  text-align: right;
+                  direction: rtl;
+                  border-bottom: 1px solid rgb(207, 207, 207);
+                  position: relative;
+                  z-index: 10;
+
+                }
+
+              }
+
+            }
+
+            &:first-child {
+
+              margin-left: 0;
+
+            }
+
+            .nav_bar_icon:nth-child(2) {
+
+              display: none;
+
+            }
+
+            .userIcon {
+
+              width: 50px;
+              height: 50px;
+              border-radius: 1000000px;
+              border: 1px solid #dedede;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+
+            }
+          }
+        }
       }
-      .content{
+
+      .content {
         background-color: #dedede;
         height: 150vh;
       }
 
     }
 
-    .right_box{
+    .right_box {
       width: 15%;
       height: 100vh;
       background-color: #003873;
       position: fixed;
       right: 0;
 
-      .logo{
+      .logo {
         width: 100%;
         background-color: #002f60;
         height: 60px;
