@@ -28,15 +28,31 @@
           flex-wrap: wrap;
           padding-inline-start: 0px;
 
+          .dropDownFirst{
+
+            background-color: #00236B;
+            color: #8DECFF;
+            border-radius: 12435436px;
+
+          }
+          .dropDownLast{
+
+            background-color: #8DECFF;
+            color: #00236B;
+            border-radius: 12435436px;
+
+          }
+
           &:first-child {
 
             color: #00236B;
-            & li:hover{
-  
+
+            & li:hover {
+
               background-color: #00236B;
               color: #8DECFF;
               border-radius: 12435436px;
-  
+
             }
 
 
@@ -45,12 +61,13 @@
           &:last-child {
 
             color: #8DECFF;
-            & li:hover{
-  
+
+            & li:hover {
+
               background-color: #8DECFF;
               color: #00236B;
               border-radius: 12435436px;
-  
+
             }
 
           }
@@ -60,131 +77,135 @@
             font-size: 2rem;
             padding: 0 20px;
             position: relative;
-            
 
 
-            .leftBox{
-              
-              &:first-child {
+            #userIcon {
 
-              left: -20px !important;
+              left: -3px !important;
+            }
+
+            .leftBox {
+
+              left: -10px !important;
+
 
             }
           }
 
-            .rightBox{
+          .rightBox {
+
+            left: unset !important;
+            right: -10px !important;
+
+            .dropDown_shape {
 
               left: unset !important;
-              right: -10px !important;
-
-              .dropDown_shape{
-
-                left: unset !important;
-                right: 34px !important;
-
-              }
+              right: 34px !important;
 
             }
-            .dropDown {
 
-              width: max-content;
-              border: 1px solid rgb(148, 148, 148);
-              border-radius: 20px;
+          }
+
+          .dropDown {
+
+            width: max-content;
+            border: 1px solid rgb(148, 148, 148);
+            border-radius: 20px;
+            position: absolute;
+            top: 75px;
+            left: -30px;
+            display: none;
+
+            .dropDown_shape {
+
+              width: 20px;
+              height: 20px;
+              @include transform(rotate(45deg));
+              border-top: 1px solid rgb(148, 148, 148);
+              border-left: 1px solid rgb(148, 148, 148);
               position: absolute;
-              top: 75px;
-              left: -30px;
-              display: none;
+              left: 34px;
+              top: -11px;
+              background-color: #DEDEDE;
 
-              .dropDown_shape {
+            }
 
-                width: 20px;
-                height: 20px;
-                @include transform(rotate(45deg));
-                border-top: 1px solid rgb(148, 148, 148);
-                border-left: 1px solid rgb(148, 148, 148);
-                position: absolute;
-                left: 34px;
-                top: -11px;
-                background-color: #DEDEDE;
+            .dropDown_box {
 
-              }
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 0;
+              position: relative;
+              z-index: 10;
 
-              .dropDown_box {
+              .dropDown_box_items {
 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 0;
+                color: $black;
+                margin: 0px 5px;
+                font-size: 1rem;
+                padding: 20px;
+                text-align: right;
+                direction: rtl;
+                border-bottom: 1px solid rgb(207, 207, 207);
                 position: relative;
                 z-index: 10;
 
-                .dropDown_box_items {
-
-                  color: $black;
-                  margin: 0px 5px;
-                  font-size: 1rem;
-                  padding: 20px;
-                  text-align: right;
-                  direction: rtl;
-                  border-bottom: 1px solid rgb(207, 207, 207);
-                  position: relative;
-                  z-index: 10;
-
-                }
-
               }
 
             }
 
-            &:first-child {
+          }
 
-              margin-left: 0;
+          &:first-child {
 
-            }
+            margin-left: 0;
 
-            .nav_bar_icon:nth-child(2) {
+          }
 
-              display: none;
+          .nav_bar_icon:nth-child(2) {
 
-            }
+            display: none;
 
-            .userIcon {
+          }
 
-              width: 50px;
-              height: 50px;
-              border-radius: 1000000px;
-              border: 1px solid #dedede;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
+          .userIcon {
 
-            }
+            width: 50px;
+            height: 50px;
+            border-radius: 1000000px;
+            border: 1px solid #dedede;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
           }
         }
       }
-
-      .content {
-        background-color: #dedede;
-        height: 150vh;
-      }
-
     }
 
-    .right_box {
-      width: 15%;
-      height: 100vh;
-      background-color: #003873;
-      position: fixed;
-      right: 0;
+    .content {
+      background-color: #dedede;
+      height: 150vh;
+    }
 
-      .logo {
-        width: 100%;
-        background-color: #002f60;
-        height: 60px;
-      }
+  }
+
+  .right_box {
+    width: 15%;
+    height: 100vh;
+    background-color: #003873;
+    position: fixed;
+    right: 0;
+
+    .logo {
+      width: 100%;
+      background-color: #002f60;
+      height: 60px;
     }
   }
 }
+
 
 @import "responsive";
