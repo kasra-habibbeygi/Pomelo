@@ -21,15 +21,29 @@
       background-color: #003873;
       position: fixed;
       right: 0;
+      overflow-y: scroll;
+      direction: rtl;
     
       .logo {
-        width: 100%;
+        width: 15%;
         background-color: #002f60;
         height: 60px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        direction: ltr;
+    
+
+        .fa-chevron-double-right{
+          font-size: 1.2rem;
+          color: #8DECFF;
+          margin-right: 10px;
+          cursor: pointer;
+        }
   
         .img_of_logo{
           height: 55px;
