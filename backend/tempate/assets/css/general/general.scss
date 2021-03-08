@@ -89,3 +89,26 @@ select {
 label {
   color: #626262 !important;
 }
+
+
+//scrollbar
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(197, 197, 197);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(85, 94, 129);
+}
+
+html {
+  scroll-behavior: smooth;
+}
