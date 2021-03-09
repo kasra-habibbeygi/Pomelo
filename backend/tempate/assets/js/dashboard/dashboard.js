@@ -28,3 +28,14 @@ $(".listIcon").click(function () {
 
 
 });
+
+
+//dashbord js side bar menu
+
+$('.articles_btn').click(function(){
+    $('#article_menu').slideToggle();
+});
+
+$('.product_btn').click(function(){
+    $('#product_menu').slideToggle();
+});
