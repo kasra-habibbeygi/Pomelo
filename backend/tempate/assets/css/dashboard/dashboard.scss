@@ -180,12 +180,16 @@
       color: $white;
       direction: rtl;
       text-align: right;
-      margin-top: 70px;
+      margin-top: 80px;
 
       ul {
         list-style-type: none;
 
-        .li_menu {}
+        .li_menu {
+          ul{
+            display: none
+          }
+        }
 
       }
     }
