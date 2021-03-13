@@ -7,6 +7,7 @@
     width: 100%;
 
     .left_box {
+      width: 85%;
       .content {
         background-color: #dedede;
         height: 150vh;
@@ -43,6 +44,13 @@
           font-size: 1.5rem;
           color: #8DECFF;
           margin-right: 20px;
+          cursor: pointer;
+        }
+
+        .fa-chevron-double-left {
+          font-size: 1.2rem;
+          color: #8DECFF;
+          margin-right: 0px;
           cursor: pointer;
         }
 
