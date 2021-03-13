@@ -19,25 +19,25 @@ $('.fa-chevron-double-right').click(function () {
         'overflow-y': 'auto',
         'width': '60px',
     });
-    $( this ).replaceWith( "<i class='fad fa-chevron-double-left'></i>" );
+    $( this ).attr( 'class' , 'fad fa-chevron-double-left');
     $(this).css({
         'font-size': ' 1.2rem',
         'margin-right': ' 0px'
     });
     $('.main .dashboard .logo').css('width', '60px');
     $('.nav_bar , .left_box').css('width', '96.1%');
-    
+   
 });
 
 //open menu
 
-$('.fa-chevron-double-left').click(function () {
+$(document).on('click' , '.fa-chevron-double-left' , function () {
     $('.text_menu , .down_btn , .side_bar_menu ul p , .img_of_logo , .name_of_page').show();
     $('.main .dashboard .right_box').css({
         'overflow-y': 'scull',
         'width': '15%',
     });
-    $( this ).replaceWith( "<i class='fad fa-chevron-double-right'></i>" );
+    $( this ).attr( 'class' , 'fad fa-chevron-double-right');
     $(this).css({
         'font-size': ' 1.5rem',
         'margin-right': ' 20px'
