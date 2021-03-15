@@ -1,20 +1,18 @@
 $(".nav_list").click(function () {
-
     $(".drop-down").hide();
     $(this).children(".drop-down").show();
-
 });
 
 //dashbord js side bar menu
+let u_m=1;
+$('.drop_down').click(function () {
 
-// $('.drop_down').click(function () {
-//     alert('ok')
-
-// });
-
-
+    $(this).children('.under_menu').slideToggle()
+   
+});
 
 //close menu
+
 let o_c=1;
 $('.open_close').click(function () {
 
@@ -36,7 +34,7 @@ $('.open_close').click(function () {
     else{
         $('.text_menu , .down_btn , .side_bar_menu ul p , .img_of_logo , .name_of_page').show();
         $('.main .dashboard .right_box').css({
-            'overflow-y': 'scull',
+            'overflow-y': 'scrull',
             'width': '15%',
         });
         $( this ).attr( 'class' , 'fad fa-chevron-double-right open_close');
