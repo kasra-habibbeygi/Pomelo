@@ -122,7 +122,8 @@
 
 
                         }
-                        .input_search{
+
+                        .input_search {
 
                             background-color: transparent;
                             color: white;
@@ -137,9 +138,14 @@
 
     }
 }
-@media only screen and (max-width: 620px){
 
-    .left_box .nav_bar ul{
+.OC{
+    display: block !important;
+}
+
+@media only screen and (max-width: 620px) {
+
+    .left_box .nav_bar ul {
 
         width: 200px;
 

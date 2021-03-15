@@ -1,44 +1,8 @@
 <?php
 
-    $dblink =  mysqli_connect("localhost" , 'root' ,'' , 'pomelo')
-        or die(mysqli_connect_error());
-
-    mysqli_query($dblink , "SET NAMES 'UTF-8'");
-
-
-    if(isset($_POST['login'])){
-
-        $email = htmlentities(trim($_POST['email']) , ENT_QUOTES , 'UTF-8');
-        $password = htmlentities(trim($_POST['password']) , ENT_QUOTES , 'UTF-8');
-        $securePass = md5(sha1(base64_encode($password)));
-        $checkedEmail = filter_var($email , FILTER_VALIDATE_EMAIL);
-
-        if($email !== '' && $password !== '' && $checkedEmail && strlen($password) >= 8){
-
-            $SQ = "SELECT id FROM `admin` WHERE email = '$email' AND password = '$securePass'";
-            $result = mysqli_query($dblink , $SQ);
-
-            if($result -> num_rows > 0){
-
-                header('location:../dashbord/dashboard.html');
-
-            }else{
-
-                header('location:?msg=UNF');
-
-            }
-        }else{
-
-            header('location:?msg=IR');
-
-        }
-
-    }
-
+    require_once '../../../../init.php';
+    
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,23 +29,7 @@
             <div class="l_left_b">
                 <form action="" method="POST">
 
-                    <div class="error_box <?php
-                    
-                    if(isset($_GET['msg'])){
-
-                        $msg = htmlentities(trim($_GET['msg']) , ENT_QUOTES , 'UTF-8');
-
-                        if($msg === 'IR'){
-
-                            echo "IR";
-
-                        }else if($msg === 'UNF'){
-
-                            echo "UNF"; 
-
-                        }
-
-                    }?>">
+                    <div class="error_box">
                         <div class="error warning_error">
                             <i class="fal fa-exclamation-circle"></i>
                             <p class="text_error"></p>
@@ -113,9 +61,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary" id="submit_login" name="login">ورود</button>
                     <hr>
-                    <a href="recovery_email.html" class="forgot_pass">
-                        !رمز عبور خود را فراموش کرده ام
-                    </a>
+                    <a href="recovery_email.html" class="forgot_pass">!رمز عبور خود را فراموش کرده ام</a>
                 </form>
             </div>
             <div class="l_right_b">
@@ -132,14 +78,6 @@
     <script src="../../assets/js/general/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/login_recovery/login.js"></script>
 
-
-
 </body>
 
 </html>
-
-<?php
-
-    mysqli_close($dblink);
-
-?>

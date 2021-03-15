@@ -1,21 +1,26 @@
 <?php
 
     defined("DB_HOST")
-        or die;
+    or die;
 
-    class Backend extends Base {
+    class Backend extends Base{
 
-        // check login authentication
-        public function checkLogin(){
+        public function checkLogIn(){
 
-            if(isset($_SESSION['admin_id']))
+            if(isset($_SESSION['admin_user']))
                 return true;
 
-            else    
+            else 
                 return false;
 
         }
-      
+
+        public function logIn($email , $pass){
+
+            
+
+        }
+        
     }
 
 ?>
