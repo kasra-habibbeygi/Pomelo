@@ -1,20 +1,35 @@
 <?php
 
     require_once '../../../../init.php';
+    if($main -> checkLogin())
+        $main -> redirect('../dashbord/dashboard.html');
+
+
+    $login = $main -> safePost('login');
+    if(isset($login)){
+
+        $email = $main -> safePost('email');
+        $pass = $main -> safePost('password');
+        $pass = $main -> safePassword($pass);
+        $rememberMe = $main -> safePost('RM');
+
+        $access = $main -> logIn($email , $pass , $rememberMe);
+        if($access){
+
+            $main -> redirect('../dashbord/dashboard.html');
+
+        }
+
+    }
     
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!--    meta tags   -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--    Title of page   -->
     <title>ورود</title>
-
-    <!--    css link    -->
     <link rel="stylesheet" href="../../assets/css/general/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/general/fontawsome.css">
     <link rel="stylesheet" href="../../assets/css/general/general.css">
@@ -27,7 +42,7 @@
     <section class="main">
         <div class="login_page">
             <div class="l_left_b">
-                <form action="" method="POST">
+                <form action="" method="POST" onsubmit="return validation()">
 
                     <div class="error_box">
                         <div class="error warning_error">
@@ -39,7 +54,7 @@
 
                     <div class="form-group">
                         <label for="email">ایمیل</label>
-                        <input type="text" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+                        <input type="text" class="form-control" id="email" name="email">
                     </div>
                     <div class="form-group">
                         <label for="password">کلمه عبور</label>
@@ -55,7 +70,7 @@
                     </div>
                     <div class="form-group form-check">
                         <label class="form-check-label cb_label" for="check_box">مرا به خاطر بسپار
-                            <input type="checkbox" class="form-check-input ck_input" id="check_box">
+                            <input type="checkbox" class="form-check-input ck_input" id="check_box" name="RM">
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -73,7 +88,6 @@
         </p>
 
     </section>
-    <!--    js link     -->
     <script src="../../assets/js/general/jQuery.js"></script>
     <script src="../../assets/js/general/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/login_recovery/login.js"></script>

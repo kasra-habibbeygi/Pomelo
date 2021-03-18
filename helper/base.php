@@ -71,6 +71,12 @@
 
         }
 
+        public function validEmail($val){
+
+            return filter_var($val , FILTER_VALIDATE_EMAIL);
+
+        }
+
     }
 
 ?>
