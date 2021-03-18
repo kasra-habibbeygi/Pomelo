@@ -97,6 +97,7 @@
 
                     .drop_down {
 
+                        width: max-content;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -122,13 +123,45 @@
 
 
                         }
-                        .input_search{
 
-                            background-color: transparent;
-                            color: white;
-                            border: none;
+                        form {
+
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            button {
+
+                                background-color: transparent;
+                                color: #797979;
+                                border: none;
+
+                            }
+
+                            .drop_down_section {
+                            
+                                padding: 10px 20px;
+                                border: none;
+
+                            }
+
+                            .input_search {
+
+                                width: 200px;
+                                text-align: right;
+                                background-color: transparent;
+                                color: $black;
+                                border: none;
+
+                                &:focus {
+
+                                    outline: none;
+
+                                }
+
+                            }
 
                         }
+
 
                     }
                 }
@@ -137,9 +170,10 @@
 
     }
 }
-@media only screen and (max-width: 620px){
 
-    .left_box .nav_bar ul{
+@media only screen and (max-width: 620px) {
+
+    .left_box .nav_bar ul {
 
         width: 200px;
 
