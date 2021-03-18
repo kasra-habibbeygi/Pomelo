@@ -5,12 +5,12 @@
 
     class Frontend extends Base{
 
-        public function testfront (){
+        public function testfront(){
 
-            echo 'salam salam';
+            echo 'test front end classes';
 
         }
-        
+
     }
 
 ?>
