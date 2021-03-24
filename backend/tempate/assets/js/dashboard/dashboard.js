@@ -1,11 +1,3 @@
-// $(".nav_list").click(function () {
-
-//     $(".drop-down").hide();
-//     $(this).children(".drop-down").show();
-
-// });
-
-
 for (let i = 0; i < $(".nav_list").length; i++) {
 
     $(".nav_list").eq(i).click(function () {
@@ -30,7 +22,7 @@ for (let i = 0; i < $(".nav_list").length; i++) {
 let u_m = 1;
 $('.drop_down').click(function () {
 
-    $(this).children('.under_menu').slideToggle()
+    $(this).children('.under_menu').slideToggle();
 
 });
 
