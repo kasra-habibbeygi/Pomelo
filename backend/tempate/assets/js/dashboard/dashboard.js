@@ -19,7 +19,24 @@ for (let i = 0; i < $(".nav_list").length; i++) {
 }
 
 //dashbord js side bar menu1
+for(let j = 0 ; j < $('.submenu_btn').length ; j++){
 
+    $('.submenu_btn').eq(j).click(function(){
+
+        if($(this).next().css('display') === 'none'){
+
+            $('.submenu_btn').next().slideUp();
+            $(this).next().slideDown();
+
+        }else {
+
+            $(this).next().slideUp();
+
+        }
+
+    });
+
+}
 
 //close menu
 

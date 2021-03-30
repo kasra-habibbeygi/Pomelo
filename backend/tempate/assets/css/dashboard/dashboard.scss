@@ -116,12 +116,14 @@
               }
             }
 
-            .btn_Style {
+            .submenu_btn {
               border: none;
               width: 100%;
               margin: 10px 0 0;
               padding: 0 20px 0 0;
               text-align: right;
+              display: flex;
+              align-items: center;
 
               &:focus{
                 box-shadow: none;
@@ -211,14 +213,8 @@
 
         .li_menu {
           .under_menu {
-
             display: none;
           }
-
-          .under_menu_o {
-            max-height: max-content;
-          }
-
         }
 
       }
