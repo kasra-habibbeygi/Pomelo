@@ -18,13 +18,8 @@ for (let i = 0; i < $(".nav_list").length; i++) {
 
 }
 
-//dashbord js side bar menu
-let u_m = 1;
-$('.drop_down').click(function () {
+//dashbord js side bar menu1
 
-    $(this).children('.under_menu').slideToggle();
-
-});
 
 //close menu
 

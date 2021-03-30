@@ -111,15 +111,9 @@
             .link_s_m {
               color: $white;
 
-              .fa-chevron-down {
-                position: absolute;
-                left: 20px;
-              }
-
               .fa-chevron-left {
                 position: absolute;
                 left: 20px;
-                display: none;
               }
 
               .text_menu {
@@ -202,10 +196,6 @@
 
       ul {
         list-style-type: none;
-
-        .drop_down {
-          cursor: pointer;
-        }
 
         .li_menu {
           .under_menu {
