@@ -103,21 +103,33 @@
           }
 
           .li_menu {
-            padding-inline-start: 20px;
             font-family: $tf;
-            margin-top: 10px;
-
 
             .link_s_m {
               color: $white;
-
-              .fa-chevron-left {
-                position: absolute;
-                left: 20px;
-              }
+              padding-inline-start: 20px;
+              margin-top: 10px;
+              display: block;
 
               .text_menu {
                 margin-right: 5px;
+              }
+            }
+
+            .btn_Style {
+              border: none;
+              width: 100%;
+              margin: 10px 0 0;
+              padding: 0 20px 0 0;
+              text-align: right;
+
+              &:focus{
+                box-shadow: none;
+              }
+            
+              .fa-chevron-left {
+                position: absolute;
+                left: 20px;
               }
             }
 
@@ -199,11 +211,11 @@
 
         .li_menu {
           .under_menu {
-          
+
             display: none;
           }
 
-          .under_menu_o{
+          .under_menu_o {
             max-height: max-content;
           }
 
