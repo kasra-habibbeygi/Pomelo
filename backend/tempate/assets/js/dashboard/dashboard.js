@@ -98,6 +98,8 @@ $('.open_close').click(function () {
 
 });
 
+
+// responsive side bar
 if($(window).width() <= '768'){
 
     $('.text_menu , .down_btn , .side_bar_menu ul p , .img_of_logo , .name_of_page').hide();
