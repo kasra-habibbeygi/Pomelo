@@ -43,7 +43,7 @@
         z-index: 1000;
 
         .fa-chevron-double-right {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           color: #8DECFF;
           margin-right: 20px;
           cursor: pointer;
@@ -91,7 +91,6 @@
 
         ul {
           list-style-type: none;
-
           padding-inline-start: 0px;
 
           p {
@@ -129,14 +128,15 @@
                 box-shadow: none;
               }
             
-              .fa-chevron-left {
+              .submenu_icon {
                 position: absolute;
                 left: 20px;
+                font-size: 0.7rem;
               }
             }
 
             ul {
-              padding-inline-start: 40px;
+              padding-inline-start: 60px;
 
               li {
                 list-style-type: disc;
@@ -222,5 +222,17 @@
   }
 }
 
+//js class
+
+.sunMshow{
+  display: none;
+}
+
+.a{
+  display: block;
+  position: relative;
+  right: 100px;
+  background-color: red;
+}
 
 @import "responsive";
