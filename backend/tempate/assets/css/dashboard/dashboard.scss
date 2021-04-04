@@ -124,10 +124,12 @@
               display: flex;
               align-items: center;
 
-              &:focus{
+              &:focus {
                 box-shadow: none;
               }
-            
+
+
+
               .submenu_icon {
                 position: absolute;
                 left: 20px;
@@ -222,14 +224,28 @@
   }
 }
 
-//js class
 
-.sunMshow{
-  display: none;
-}
+.show_text_submenu {
+  position: relative;
+  &:hover {
+    .under_menu {
+      display: block !important;
+      position: absolute;
+      background-color: #003873;
+      right: 60px;
+      padding-inline-start: 0px !important;
+      width: 150px;
+      border-radius: 5px 0px 0px 5px;
+      text-align: center;
+      top: 0;
+      border-right: 3px solid #3A8BA6;
 
-.hover_sidebar_menu{
-  background-color: red;
+      li {
+        display: block !important;
+        margin: 10px 0px;
+      }
+    }
+  }
 }
 
 @import "responsive";

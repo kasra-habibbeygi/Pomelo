@@ -18,7 +18,9 @@ for (let i = 0; i < $(".nav_list").length; i++) {
 
 }
 
-//dashbord js side bar menu1
+//dashbord js side bar menu nadie
+
+//open and close submenu
 for(let j = 0 ; j < $('.submenu_btn').length ; j++){
 
     $('.submenu_btn').eq(j).click(function(){
@@ -40,76 +42,17 @@ for(let j = 0 ; j < $('.submenu_btn').length ; j++){
 
 }
 
-//close menu
+//close menu nadie
 
-
+//variable
 let o_c = 1;
 
-function sideBar_menu_responsive(){
-
-    if (o_c === 1) {
-
-        $('.text_menu , .submenu_icon , .side_bar_menu ul p , .img_of_logo , .name_of_page , .under_menu li').hide();
-
-        $('.main .dashboard .right_box').css({
-            'overflow-y': 'auto',
-            'width': '60px',
-        });
-
-        $('.open_close').attr('class', 'fad fa-chevron-double-left open_close');
-
-        $('.open_close').css({ 'margin-right': ' 0px'});
-
-        $('.main .dashboard .logo').css('width', '60px');
-
-        $('.nav_bar , .left_box').css('width', '96.1%');
-
-        // $('.icon_menu').mouseover(function(){
-        
-        //     $(this).parent().children('.text_menu').addClass('hover_sidebar_menu');
-        // });
-        
-        o_c = 0;
-
-    } 
-    
-    else {
-        
-        $('.text_menu , .submenu_icon , .side_bar_menu ul p , .img_of_logo , .name_of_page , .under_menu li').show();
-
-        $('.main .dashboard .right_box').css({
-            'overflow-y': 'scrull',
-            'width': '15%',
-        });
-
-        $('.open_close').attr('class', 'fad fa-chevron-double-right open_close');
-
-        $('.open_close').css({ 'margin-right': ' 20px' });
-
-        $('.main .dashboard .logo').css('width', '15%');
-
-        $('.nav_bar , .left_box').css('width', '85%');
-        
-        o_c = 1;
-    }
-
-}
-
-
-$('.open_close').click(function () {
-    sideBar_menu_responsive()
-});
-
-
-// responsive side bar
-
-
-if($(window).width() <= '992px'){
-
-    $('.text_menu , .down_btn , .side_bar_menu ul p , .img_of_logo , .name_of_page , .submenu_icon').hide();
+//function
+function if_close(){
+    $('.text_menu , .submenu_icon , .side_bar_menu ul p , .img_of_logo , .name_of_page , .under_menu li').hide();
 
     $('.main .dashboard .right_box').css({
-        'overflow-y': 'auto',
+        'overflow-y': 'unset',
         'width': '60px',
     });
 
@@ -121,46 +64,68 @@ if($(window).width() <= '992px'){
 
     $('.nav_bar , .left_box').css('width', '96.1%');
 
+    $('.sub_menu_close').addClass('show_text_submenu');
+
     o_c = 0;
+
+    localStorage.setItem('o_c' , o_c);
+
+}
+function else_close (){
+
+    $('.text_menu , .submenu_icon , .side_bar_menu ul p , .img_of_logo , .name_of_page , .under_menu li').show();
+
+    $('.main .dashboard .right_box').css({
+        'overflow-y': 'scrull',
+        'width': '15%',
+    });
+
+    $('.open_close').attr('class', 'fad fa-chevron-double-right open_close');
+
+    $('.open_close').css({ 'margin-right': ' 20px' });
+
+    $('.main .dashboard .logo').css('width', '15%');
+
+    $('.nav_bar , .left_box').css('width', '85%');
+
+    $('.sub_menu_close').removeClass('show_text_submenu');
+    
+    o_c = 1;
+
+    localStorage.setItem('o_c' , o_c);
+
 }
 
-$(window).resize(function(){
-    if($(window).width() <= '992'){
-
-        $('.text_menu , .down_btn , .side_bar_menu ul p , .img_of_logo , .name_of_page , .submenu_icon').hide();
+//metod
+$('.open_close').click(function () {
+  
+    if (o_c === 1) 
+        if_close();
     
-        $('.main .dashboard .right_box').css({
-            'overflow-y': 'auto',
-            'width': '60px',
-        });
-    
-        $('.open_close').attr('class', 'fad fa-chevron-double-left open_close');
-    
-        $('.open_close').css({ 'margin-right': ' 0px'});
-    
-        $('.main .dashboard .logo').css('width', '60px');
-    
-        $('.nav_bar , .left_box').css('width', '96.1%');
-    
-        o_c = 0;
-    }
-    else {
-        
-        $('.text_menu , .submenu_icon , .side_bar_menu ul p , .img_of_logo , .name_of_page , .under_menu li').show();
-
-        $('.main .dashboard .right_box').css({
-            'overflow-y': 'scrull',
-            'width': '15%',
-        });
-
-        $('.open_close').attr('class', 'fad fa-chevron-double-right open_close');
-
-        $('.open_close').css({ 'margin-right': ' 20px' });
-
-        $('.main .dashboard .logo').css('width', '15%');
-
-        $('.nav_bar , .left_box').css('width', '85%');
-        
-        o_c = 1;
-    }
+    else 
+        else_close ()
 });
+
+
+// responsive side bar
+if($(window).width() <= '992px')
+    if_close();
+
+$(window).resize(function(){
+    if($(window).width() <= '992')
+        if_close();
+    
+    else 
+        else_close ();
+    
+});
+
+
+//local storge 
+
+if (localStorage.o_c == 1){
+    else_close ();
+}
+else{
+    if_close();
+}
