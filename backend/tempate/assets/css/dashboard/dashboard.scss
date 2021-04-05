@@ -248,4 +248,24 @@
   }
 }
 
+.show_text_menu_name{
+  position: relative;
+  &:hover {
+    .text_menu {
+      display: block !important;
+      position: absolute;
+      background-color: #003873;
+      right: 55px;
+      padding-inline-start: 0px !important;
+      width: 150px;
+      border-radius: 5px 0px 0px 5px;
+      text-align: center;
+      top: 0;
+      border-right: 3px solid #3A8BA6;
+      padding: 5px 0px;
+
+    }
+  }
+}
+
 @import "responsive";

@@ -65,6 +65,7 @@ function if_close(){
     $('.nav_bar , .left_box').css('width', '96.1%');
 
     $('.sub_menu_close').addClass('show_text_submenu');
+    $('.show_menu_close').addClass('show_text_menu_name');
 
     o_c = 0;
 
@@ -89,6 +90,7 @@ function else_close (){
     $('.nav_bar , .left_box').css('width', '85%');
 
     $('.sub_menu_close').removeClass('show_text_submenu');
+    $('.show_menu_close').removeClass('show_text_menu_name');
     
     o_c = 1;
 
