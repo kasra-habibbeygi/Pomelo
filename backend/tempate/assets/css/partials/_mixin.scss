@@ -12,3 +12,19 @@
   -moz-transform: $type;
 }
 
+@mixin btn_style($color){
+  padding: 7px 30px;
+  background-color: $color;
+  color: $white;
+}
+
+@mixin   btn_table($color){
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  line-height: 45px;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: $color;
+  color: $white;
+}
