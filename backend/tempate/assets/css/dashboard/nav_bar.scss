@@ -107,6 +107,22 @@
                         top: 40px;
                         padding: 0px 10px;
 
+                        .triangle {
+
+                            width: 10px;
+                            height: 10px;
+                            @include transform(rotate(45deg));
+                            position: absolute;
+                            border-left: 1px solid #808080;
+                            border-top: 1px solid #808080;
+                            left: 10px;
+                            top: -5.8px;
+                            z-index: 1;
+                            background-color: #DEDEDE;
+
+                        }
+
+
                         .drop_down_section {
 
                             width: 100%;
@@ -139,7 +155,7 @@
                             }
 
                             .drop_down_section {
-                            
+
                                 padding: 10px 20px;
                                 border: none;
 
@@ -172,7 +188,7 @@
     }
 }
 
-.OC{
+.OC {
     display: block !important;
 }
 
