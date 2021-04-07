@@ -9,9 +9,45 @@
     .left_box {
       width: 85%;
 
-      .content {
-        background-color: #dedede;
+      .content_box {
         height: 150vh;
+        margin-top: 60px;
+        direction: rtl;
+        width: 100%;
+
+        .addres_page {
+          display: flex;
+          padding-top: 10px;
+          margin-right: 20px;
+          color: #002f60;
+
+          .text_addres {
+            margin-right: 10px;
+          }
+
+        }
+
+        .content {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          .sign_box {
+            width: 80%;
+            height: 80px;
+            box-shadow: 0 0 10px 1px #002e6081;
+            margin-top: 50px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+              font-size: 1.5rem;
+            }
+          }
+        }
+
       }
     }
 
@@ -227,6 +263,7 @@
 
 .show_text_submenu {
   position: relative;
+
   &:hover {
     .under_menu {
       display: block !important;
@@ -248,8 +285,9 @@
   }
 }
 
-.show_text_menu_name{
+.show_text_menu_name {
   position: relative;
+
   &:hover {
     .text_menu {
       display: block !important;
@@ -267,5 +305,8 @@
     }
   }
 }
+
+
+
 
 @import "responsive";
