@@ -1,106 +1,200 @@
 @import '../general/general';
 
 
-.sign_up {
+.main {
 
-    border: 1px solid #808080;
-    border-radius: 10px;
+    width: 100%;
     direction: rtl;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 
-    .photo {
+    .sign_up {
 
-        width: 100%;
+        width: 300px;
+        height: 611.2px;
+        border: 1px solid #808080;
+        border-radius: 10px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
         flex-direction: column;
-        padding: 20px;
 
-        p {
+        .photo {
 
-            color: rgb(83, 83, 83);
-            margin-top: 20px;
-            font-size: 0.8rem;
-            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
 
-        }
+            p {
 
-        .container {
-            width: unset;
+                color: rgb(83, 83, 83);
+                margin-top: 20px;
+                font-size: 0.8rem;
+                text-align: center;
 
-            .avatar-upload {
-                position: relative;
-                max-width: 205px;
+            }
 
-                .avatar-edit {
-                    position: absolute;
-                    right: 12px;
-                    z-index: 1;
-                    top: 10px;
+            .imageProfile {
 
-                    input {
-                        display: none;
+                width: 192px;
+                height: 192px;
+                border-radius: 100%;
+                border: 6px solid #F8F8F8;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
 
-                        +label {
-                            display: inline-block;
-                            width: 34px;
-                            height: 34px;
-                            margin-bottom: 0;
-                            border-radius: 100%;
-                            background: #FFFFFF;
-                            border: 1px solid transparent;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-                            cursor: pointer;
-                            font-weight: normal;
-                            transition: all .2s ease-in-out;
+            }
 
-                            &:hover {
-                                background: #f1f1f1;
-                                border-color: #d6d6d6;
-                            }
+            .container {
+                width: unset;
+                display: none;
 
-                            &:after {
+                .avatar-upload {
+                    position: relative;
+                    max-width: 205px;
 
-                                color: #757575;
-                                position: absolute;
-                                top: 10px;
-                                left: 0;
-                                right: 0;
-                                text-align: center;
-                                margin: auto;
+                    .avatar-edit {
+                        position: absolute;
+                        right: 12px;
+                        z-index: 1;
+                        top: 10px;
+
+                        input {
+                            display: none;
+
+                            +label {
+                                display: inline-block;
+                                width: 34px;
+                                height: 34px;
+                                margin-bottom: 0;
+                                border-radius: 100%;
+                                background: #FFFFFF;
+                                border: 1px solid transparent;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                                cursor: pointer;
+                                font-weight: normal;
+                                transition: all .2s ease-in-out;
+
+                                &:hover {
+                                    background: #f1f1f1;
+                                    border-color: #d6d6d6;
+                                }
+
+                                &:after {
+
+                                    color: #757575;
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 0;
+                                    right: 0;
+                                    text-align: center;
+                                    margin: auto;
+                                }
                             }
                         }
                     }
-                }
 
-                .avatar-preview {
-                    width: 192px;
-                    height: 192px;
-                    position: relative;
-                    border-radius: 100%;
-                    border: 6px solid #F8F8F8;
-                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-
-                    >div {
-                        width: 100%;
-                        height: 100%;
+                    .avatar-preview {
+                        width: 192px;
+                        height: 192px;
+                        position: relative;
                         border-radius: 100%;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
+                        border: 6px solid #F8F8F8;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+                        >div {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 100%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
                     }
                 }
+            }
+
+        }
+
+        div {
+
+            p {
+
+                direction: ltr;
+
+            }
+
+        }
+
+        .change-button {
+
+            margin-bottom: 10px;
+
+        }
+
+
+
+
+    }
+
+    .personalInfo {
+
+        width: 72%;
+        text-align: right;
+
+        .input_page {
+
+            direction: rtl;
+            display: flex;
+            flex-wrap: wrap;
+
+            span {
+
+                width: 100%;
+                direction: ltr;
+                padding: 10px 0px 0px 10px;
+                display: flex;
+                flex-wrap: wrap;
+
+                button {
+
+                    background-color: #006387;
+                    color: white;
+
+                }
+            }
+
+            p {
+
+                font-size: 1.6rem;
+                color: $black;
+
+            }
+
+            .input_box {
+
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+                text-align: right;
+
+                input {
+
+                    width: 100%;
+
+                }
+
             }
         }
 
     }
-
-    
 
 }
