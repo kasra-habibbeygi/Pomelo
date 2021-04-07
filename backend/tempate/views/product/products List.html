@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--    Title of page   -->
-    <title>داشبورد</title>
+    <title>لیست محصولات</title>
 
     <!--    css link    -->
     <link rel="stylesheet" href="../../assets/css/general/bootstrap.min.css">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../assets/css/general/general.css">
     <link rel="stylesheet" href="../../assets/css/dashboard/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/dashboard/nav_bar.css">
+    <link rel="stylesheet" href="../../assets/css/product/products List.css">
 
 </head>
 
@@ -52,7 +53,7 @@
                             <div class="drop-down">
 
                                 <span class="drop_down">
-                                    
+
                                     <span class="triangle"></span>
                                     <a class="drop_down_section" href="">پروفایل</a>
                                     <a class="drop_down_section" href="">وظایف</a>
@@ -142,14 +143,73 @@
                     </ul>
                 </nav>
                 <div class="content_box">
-                    <div   class="addres_page">
+                    <div class="addres_page">
                         <i class="fad fa-cart-plus"></i>
                         <span class="text_addres">
-                            تولید محتوا / محصولات / افزودن محصول
+                            تولید محتوا / محصولات / لسیت محصولات
                         </span>
                     </div>
                     <div class="content">
-                       
+                        <div class="search_product">
+                            <p>جستجو</p>
+                            <hr>
+                            <div class="search_form_box">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="search">نام محصول</label>
+                                        <input type="search" class="form-control" id="search">
+                                    </div>
+                                    <div class="form-group ml-0">
+                                        <label for="product_gp">
+                                            گروه محصول
+                                        </label>
+                                        <select class="form-control" id="product_gp">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sub_product_gp">زیرگروه محصول</label>
+                                        <select class="form-control" id="sub_product_gp">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group ml-0">
+                                        <label for="show">تعداد نمایش</label>
+                                        <select class="form-control" id="show">
+                                            <option>10</option>
+                                            <option>20</option>
+                                            <option>50</option>
+                                            <option>100</option>
+                                            <option>1000</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group ml-0">
+                                        <label for="show">فیلتر</label>
+                                        <select class="form-control" id="show">
+                                            <option>نمایش همه</option>
+                                            <option>فاقد نظر</option>
+                                            <option>دارای نظر تایید نشده</option>
+                                            <option>گروه بندی شده </option>
+                                            <option>فاقد گروه بندی</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <div class="btn_box">
+                                        <button type="submit" class="btn search_btn">جستجو</button>
+                                        <button type="reset" class="btn reset_btn">ریست</button>
+                                    </div>
+                                  
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,7 +239,7 @@
                             </li>
                             <p>تولید محتوا</p>
                             <li class="li_menu sub_menu_close">
-                                <button  type="button" class="link_s_m btn submenu_btn ">
+                                <button type="button" class="link_s_m btn submenu_btn ">
                                     <i class="fad fa-cart-plus icon_menu"></i>
                                     <span class="text_menu">
                                         محصولات
@@ -189,7 +249,7 @@
                                 <ul class="under_menu">
                                     <li>
                                         <a href="" class="link_style">
-                                             دسته بندی محصولات
+                                            دسته بندی محصولات
                                         </a>
                                     </li>
                                     <li>
@@ -220,7 +280,7 @@
                                 <ul class="under_menu">
                                     <li>
                                         <a href="" class="link_style">
-                                             دسته بندی مقالات
+                                            دسته بندی مقالات
                                         </a>
                                     </li>
                                     <li>
@@ -350,6 +410,7 @@
     <script src="../../assets/js/general/jQuery.js"></script>
     <script src="../../assets/js/general/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/dashboard/dashboard.js"></script>
+    <script src="../../assets/js/product/products List.js"></script>
 
 
 </body>
