@@ -1,23 +1,26 @@
 @import '../general/general';
 
 
-.main {
+.content_box {
 
     width: 100%;
     direction: rtl;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+
 
     .sign_up {
 
         width: 300px;
-        height: 611.2px;
+        height: max-content;
         border: 1px solid #808080;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+
+
 
         .photo {
 
@@ -145,17 +148,150 @@
 
     }
 
-    .personalInfo {
+    .forms-boxs {
 
-        width: 72%;
-        text-align: right;
+        width: 70%;
 
-        .input_page {
+        .personalInfo {
 
-            direction: rtl;
-            display: flex;
-            flex-wrap: wrap;
+            width: 100%;
+            height: max-content;
+            text-align: right;
+            padding: 20px;
+            border: 1px solid #808080;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
 
+            .input_page {
+
+                direction: rtl;
+                display: flex;
+                flex-wrap: wrap;
+
+                span {
+
+                    width: 100%;
+                    direction: ltr;
+                    padding: 10px 0px 0px 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    button {
+
+                        background-color: #007BFF;
+                        color: white;
+                        
+                        &:hover {
+                            background: #006387;
+        
+        
+                        }
+                    }
+
+                }
+
+                p {
+
+                    font-size: 1.6rem;
+                    color: $black;
+
+                }
+
+                .input_box {
+
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 10px;
+                    text-align: right;
+
+                    &:nth-child(5) {
+
+
+                        div {
+
+                            width: 40%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            input {
+
+                                width: 80px;
+                                text-align: center;
+
+                            }
+
+                            p {
+
+                                color: rgb(83, 83, 83);
+                                font-size: 0.8rem;
+                                margin: 0px;
+
+                            }
+
+                        }
+
+                    }
+
+                    input {
+
+                        width: 100%;
+
+                    }
+
+                }
+            }
+
+        }
+
+        .changePass {
+
+            .input-group{
+
+                padding: 10px;
+
+            }
+            display: none;
+            width: 100%;
+            height: max-content;
+            text-align: right;
+            padding: 20px;
+            border: 1px solid #808080;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            label {
+
+                text-align: right;
+                direction: rtl;
+
+            }
+
+            
+
+            
+            .input-group-text {
+                border-radius: 5px 0px 0px 5px;
+                border-right: none;
+                background-color: #0069D9;
+                color: white;
+
+                &:hover {
+
+                    background: #006387;
+
+
+                }
+
+                .n_eye_show:last-child,
+                .r_eye_show:last-child,
+                .o_eye_show:last-child {
+
+                    display: none;
+
+                }
+            }
             span {
 
                 width: 100%;
@@ -166,35 +302,25 @@
 
                 button {
 
-                    background-color: #006387;
+                    background-color: #007BFF;
                     color: white;
-
-                }
-            }
-
-            p {
-
-                font-size: 1.6rem;
-                color: $black;
-
-            }
-
-            .input_box {
-
-                flex-direction: column;
-                width: 100%;
-                padding: 10px;
-                text-align: right;
-
-                input {
-
-                    width: 100%;
-
+                    
+                    &:hover {
+                        background: #006387;
+    
+    
+                    }
                 }
 
             }
+            .e_input {
+
+                border-radius: 0px 5px 5px 0px !important;
+
+            }
+
+
         }
 
     }
-
 }

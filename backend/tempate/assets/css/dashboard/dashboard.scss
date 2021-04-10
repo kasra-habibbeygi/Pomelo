@@ -9,50 +9,7 @@
     .left_box {
       width: 85%;
 
-      .content_box {
-        height: 150vh;
-        margin-top: 60px;
-        direction: rtl;
-        width: 100%;
-
-        .addres_page {
-          display: flex;
-          padding-top: 20px;
-          margin-right: 20px;
-          color: #002f60;
-
-          .text_addres {
-            margin-right: 10px;
-          }
-
-        }
-
-        .content {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-
-          .sign_box {
-            width: 80%;
-            height: 80px;
-            box-shadow: 0 0 10px 1px #002e6081;
-            margin-top: 50px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h1{
-              font-size: 1.5rem;
-            }
-          }
-        }
-
-      }
     }
-
-
-
     .right_box {
       width: 15%;
       height: 100vh;
