@@ -150,7 +150,7 @@
                         </span>
                     </div>
                     <div class="content">
-                        <div class="first_info">
+                        <div class="first_info form_style_all">
                             <p>اطلاعات اولیه</p>
                             <hr>
                             <div class="form_box">
@@ -173,22 +173,77 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="short_text">متن کوتاه</label>
-                                        <textarea class="form-control" id="short_text"></textarea>
-                                      </div>
-                                
-                                    <div class="btn_box">
-                                        <button type="submit" class="btn add_btn">ثبت </button>
-                                        <button type="reset" class="btn back_btn">بازگشت</button>
+                                        <textarea class="form-control" id="short_text" rows="2"></textarea>
                                     </div>
+                                    <div class="form-group ml-0">
+                                        <label for="product_gp">
+                                            نمایش
+                                        </label>
+                                        <select class="form-control" id="product_gp">
+                                            <option>...</option>
+                                            <option>منتشر شده</option>
+                                            <option>ثبت موقت</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="number">رتبه</label>
+                                        <input type="text" class="form-control" id="number" value="01">
+                                    </div>
+
 
                                 </form>
                             </div>
                         </div>
-                        <div class="main_content">
-                            
+                        <div class="main_content form_style_all">
+                            <p>اطلاعات اصلی</p>
+                            <hr>
+                            <div class="form_box">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="main_pic">عکس اصلی</label>
+                                        <input type="file" class="form-control-file" id="main_pic">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tags">برچسب</label>
+                                        <textarea class="form-control" id="tags" rows="2"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="main_text">متن کامل</label>
+                                        <textarea class="form-control" id="main_text" rows="15"></textarea>
+                                    </div>
+
+
+                                </form>
+                            </div>
                         </div>
-                        <div class="first_seo_info">
-                            
+                        <div class="first_seo_info form_style_all">
+                            <p>اطلاعات سئو</p>
+                            <hr>
+                            <div class="form_box">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="url_page">آدرس صفحه</label>
+                                        <input type="text" class="form-control" id="url_page">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="seo_keyword">کلمات کلیدی</label>
+                                        <textarea class="form-control" id="seo_keyword" rows="2"></textarea>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="seo_description">توضیحات سئو</label>
+                                        <textarea class="form-control" id="seo_description" rows="4"></textarea>
+                                      </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="btn_box">
+                            <button type="submit" class="btn add_btn">ثبت </button>
+                            <button type="reset" class="btn back_btn">بازگشت</button>
                         </div>
                     </div>
                 </div>

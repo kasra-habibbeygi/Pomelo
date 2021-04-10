@@ -60,6 +60,11 @@ button:focus {
 input {
   border-radius: 5px !important;
   border: 1px solid #e5e5e5 !important;
+  outline: none;
+
+  &:focus{
+    outline: none;
+  }
 }
 
 textarea {
