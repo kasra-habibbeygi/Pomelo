@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--    Title of page   -->
-    <title>لیست محصولات</title>
+    <title>لیست مقالات</title>
 
     <!--    css link    -->
     <link rel="stylesheet" href="../../assets/css/general/bootstrap.min.css">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../assets/css/general/general.css">
     <link rel="stylesheet" href="../../assets/css/dashboard/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/dashboard/nav_bar.css">
-    <link rel="stylesheet" href="../../assets/css/product/products List.css">
+    <link rel="stylesheet" href="../../assets/css/articles/article-list.css">
 
 </head>
 
@@ -144,9 +144,9 @@
                 </nav>
                 <div class="content_box">
                     <div class="addres_page">
-                        <i class="fad fa-cart-plus"></i>
+                        <i class="fad fa-newspaper"></i>
                         <span class="text_addres">
-                            تولید محتوا / محصولات / لیست محصولات
+                            تولید محتوا / مقالات / لیست مقالات
                         </span>
                     </div>
                     <div class="content">
@@ -156,12 +156,12 @@
                             <div class="search_form_box">
                                 <form>
                                     <div class="form-group">
-                                        <label for="search">نام محصول</label>
+                                        <label for="search">نام مقاله</label>
                                         <input type="search" class="form-control" id="search">
                                     </div>
                                     <div class="form-group ml-0">
                                         <label for="product_gp">
-                                            گروه محصول
+                                            گروه مقاله
                                         </label>
                                         <select class="form-control" id="product_gp">
                                             <option>1</option>
@@ -171,17 +171,7 @@
                                             <option>5</option>
                                         </select>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="sub_product_gp">زیرگروه محصول</label>
-                                        <select class="form-control" id="sub_product_gp">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group ml-0">
+                                    <div class="form-group ">
                                         <label for="show">تعداد نمایش</label>
                                         <select class="form-control" id="show">
                                             <option>10</option>
@@ -223,7 +213,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">
-                                            <input type="checkbox" class="">
+                                            <input type="checkbox" class="checkmark">
                                         </th>
                                         <th scope="col">#</th>
                                         <th scope="col">تصویر</th>
@@ -231,14 +221,15 @@
                                         <th scope="col">دسته بندی</th>
                                         <th scope="col">وضعیت انتشار</th>
                                         <th scope="col"> تاریخ درج</th>
-                                        <th scope="col">ویرایش</th>
                                         <th scope="col">حذف</th>
+                                        <th scope="col">ویرایش</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">
                                             <input type="checkbox" class="">
+                                            <span class="checkmark"></span>
                                         </th>
                                         <td>1</td>
                                         <td>
@@ -269,7 +260,7 @@
 
                                     <tr>
                                         <th scope="row">
-                                            <input type="checkbox" class="">
+                                            <input type="checkbox" class="checkmark">
                                         </th>
                                         <td>1</td>
                                         <td>
@@ -299,7 +290,7 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input type="checkbox" class="">
+                                            <input type="checkbox" class="checkmark">
                                         </th>
                                         <td>1</td>
                                         <td>
@@ -330,6 +321,16 @@
 
                                 </tbody>
                             </table>
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a href="#">1</a>
+                                <a href="#" class="active">2</a>
+                                <p>...</p>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                
+                                <a href="#">&raquo;</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -531,7 +532,7 @@
     <script src="../../assets/js/general/jQuery.js"></script>
     <script src="../../assets/js/general/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/dashboard/dashboard.js"></script>
-    <script src="../../assets/js/product/products List.js"></script>
+    <script src="../../assets/js/articles/article-list.js"></script>
 
 
 </body>

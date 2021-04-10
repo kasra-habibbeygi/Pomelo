@@ -1,0 +1,89 @@
+.table_list {
+    width: 90%;
+    box-shadow: 0 0 7px 1px #002e6081;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 40px;
+
+    .btn_edit {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 20px;
+
+        .del_btn {
+            @include btn_style($btn_red);
+        }
+
+        .release_btn {
+            @include btn_style($btn_blue);
+        }
+
+        .new_btn {
+            @include btn_style($btn_green);
+        }
+    }
+
+    .table {
+        direction: rtl;
+        text-align: center;
+
+        tr {
+            padding: 10px 30px;
+
+            th{
+                position: relative;
+                cursor: pointer;
+                
+                input{
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+            
+                }
+
+                
+
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 25px;
+                    width: 25px;
+                    border:1px solid $smal_text;
+                    border-radius: 3px;
+                  }
+
+            }
+
+            td {
+
+                .img_product {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 3px;
+                }
+
+                .release_btn {
+                    @include btn_table($btn_blue);
+
+                }
+
+                .del_btn {
+                    @include btn_table($btn_red);
+                }
+
+                .edit_btn {
+                    @include btn_table($btn_green);
+                }
+
+               
+            }
+        }
+    }
+}

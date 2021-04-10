@@ -19,12 +19,11 @@
 }
 
 @mixin   btn_table($color){
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 0;
-  line-height: 45px;
+  line-height: 30px;
   text-align: center;
-  font-size: 1.2rem;
   background-color: $color;
   color: $white;
 }

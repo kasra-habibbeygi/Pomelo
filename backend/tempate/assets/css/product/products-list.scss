@@ -1,0 +1,73 @@
+@import "../general/general";
+@import "../partials/pagination";
+@import "../partials/table";
+
+%box_style_content {
+    width: 90%;
+    box-shadow: 0 0 7px 1px #002e6081;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 40px;
+}
+
+
+.content_box {
+    .content {
+        .search_product {
+            @extend %box_style_content;
+
+            p {
+                font-family: $bf;
+                text-align: right;
+                width: 100%;
+                font-size: 1.2rem;
+                margin-top: 10px;
+            }
+
+            hr {
+                width: 100%;
+                margin-top: -5px;
+                margin-bottom: 30px;
+            }
+
+            .search_form_box {
+                width: 100%;
+                text-align: right;
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .form-group {
+                        width: 49%;
+                        margin-left: 2%;
+                    }
+
+                    .btn_box {
+                        width: 100%;
+                        margin: 20px 0;
+
+                        .search_btn {
+                            @include btn_style($btn_green);
+                        }
+
+                        .reset_btn {
+                            @include btn_style($btn_red);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        
+    }
+}
+
+input:checked .checkmark {
+    background-color: #2196F3 !important;
+  }

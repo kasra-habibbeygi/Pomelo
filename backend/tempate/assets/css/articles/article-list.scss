@@ -1,4 +1,6 @@
 @import "../general/general";
+@import "../partials/pagination";
+@import "../partials/table";
 
 %box_style_content {
     width: 90%;
@@ -9,6 +11,7 @@
     padding: 20px;
     align-items: center;
     margin-top: 50px;
+    padding: 20px 40px;
 }
 
 
@@ -22,11 +25,13 @@
                 text-align: right;
                 width: 100%;
                 font-size: 1.2rem;
+                margin-top: 10px;
             }
 
             hr {
                 width: 100%;
                 margin-top: -5px;
+                margin-bottom: 30px;
 
             }
 
@@ -45,6 +50,7 @@
 
                     .btn_box {
                         width: 100%;
+                        margin: 20px 0;
 
                         .search_btn {
                             @include btn_style($btn_green);
@@ -59,56 +65,10 @@
             }
         }
 
-        .table_list {
-            @extend %box_style_content;
-
-            .btn_edit {
-                width: 100%;
-                margin-bottom: 50px;
-                margin-top: 20px;
-
-                .del_btn {
-                    @include btn_style($btn_red);
-                }
-
-                .release_btn {
-                    @include btn_style($btn_blue);
-                }
-
-                .new_btn {
-                    @include btn_style($btn_green);
-                }
-            }
-
-            .table {
-                direction: rtl;
-          
-
-                tr{
-            
-                    td{
-                   
-                        .img_product{
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 3px;
-                        }
-
-                        .release_btn{
-                            @include  btn_table($btn_blue);
-                           
-                        }
-
-                        .del_btn{
-                            @include  btn_table($btn_red);
-                        }
-
-                        .edit_btn{
-                            @include  btn_table($btn_green);
-                        }
-                    }
-                }
-            }
-        }
+        
     }
 }
+
+input:checked .checkmark {
+    background-color: #2196F3 !important;
+  }
