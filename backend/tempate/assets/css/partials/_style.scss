@@ -1,0 +1,24 @@
+%box_style_content {
+    width: 90%;
+    box-shadow: 0 0 7px 1px #002e6081;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 40px;
+}
+
+%headingg_of_box{
+    font-family: $bf;
+    text-align: right;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+%hr_style_under_heading{
+    width: 100%;
+    margin-top: -5px;
+    margin-bottom: 30px;
+}

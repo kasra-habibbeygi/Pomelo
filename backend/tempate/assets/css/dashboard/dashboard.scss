@@ -1,4 +1,5 @@
-@import "../general/general";
+
+@import "../partials/style";
 
 .main {
   .dashboard {
@@ -28,15 +29,7 @@
           align-items: center;
           flex-direction: column;
           .sign_box{
-            width: 90%;
-            box-shadow: 0 0 7px 1px #002e6081;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            align-items: center;
-            margin-top: 50px;
-            padding: 20px 40px;
+            @extend %box_style_content;
             h1{
               font-size: 1.5rem;
             }

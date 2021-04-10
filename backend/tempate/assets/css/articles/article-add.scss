@@ -1,23 +1,68 @@
-@import "../general/general";
+
 @import "../partials/pagination";
 @import "../partials/table";
+@import "../partials/style";
 
-%box_style_content {
-    width: 90%;
-    box-shadow: 0 0 7px 1px #002e6081;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-    margin-top: 50px;
-    padding: 20px 40px;
-}
 
 
 .content_box {
+    margin-top: 60px;
+    direction: rtl;
+    margin-bottom: 70px;
+
+    .addres_page{
+        padding-top: 30px;
+        width: 90%;
+        text-align: right;
+        margin: auto;    
+    }
+
     .content {
-       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .first_info{
+            @extend %box_style_content;
+
+            p {
+                @extend %headingg_of_box;
+            }
+
+            hr {
+              @extend %hr_style_under_heading;
+
+            }
+
+            .form_box{
+                width: 100%;
+                direction: rtl;
+                text-align: right;
+                form{
+                    .btn_box {
+                        width: 100%;
+                        margin: 20px 0;
+
+                        .add_btn {
+                            @include btn_style($btn_green);
+                        }
+
+                        .back_btn {
+                            @include btn_style($btn_red);
+                        }
+                    }
+                }
+            }
+          
+        }
+
+        .main_content{
+            @extend %box_style_content;
+        }
+
+        .first_seo_info{
+            @extend %box_style_content; 
+        }
         
     }
 }
