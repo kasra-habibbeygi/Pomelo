@@ -9,7 +9,43 @@
     .left_box {
       width: 85%;
 
+
+      .content_box {
+        margin-top: 60px;
+        direction: rtl;
+        margin-bottom: 70px;
+
+        .addres_page {
+          padding-top: 30px;
+          width: 90%;
+          text-align: right;
+          margin: auto;
+
+        }
+
+        .content{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .sign_box{
+            width: 90%;
+            box-shadow: 0 0 7px 1px #002e6081;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px 40px;
+            h1{
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+
     }
+
     .right_box {
       width: 15%;
       height: 100vh;
@@ -24,7 +60,7 @@
 
 
       .logo {
-        width: 15%;
+        width: 100%;
         background-color: #002f60;
         height: 60px;
         display: flex;
@@ -80,7 +116,7 @@
         color: $white;
         direction: rtl;
         text-align: right;
-
+        margin-top: 80px;
 
         ul {
           list-style-type: none;
@@ -96,6 +132,10 @@
 
           .li_menu {
             font-family: $tf;
+
+            .under_menu {
+              display: none;
+            }
 
             .link_s_m {
               color: $white;
@@ -154,67 +194,7 @@
 
   }
 
-  .right_box {
-    width: 15%;
-    height: 100vh;
-    background-color: #003873;
-    position: fixed;
-    right: 0;
 
-    .logo {
-      width: 100%;
-      background-color: #002f60;
-      height: 60px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-
-      .img_of_logo {
-        height: 55px;
-      }
-
-      .name_of_page {
-        color: $white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-
-        h1 {
-          font-size: 1.2rem;
-          margin-bottom: 0;
-        }
-
-        p {
-          margin-bottom: 0;
-        }
-
-      }
-
-    }
-
-    .side_bar_menu {
-      color: $white;
-      direction: rtl;
-      text-align: right;
-      margin-top: 80px;
-
-
-
-      ul {
-        list-style-type: none;
-
-        .li_menu {
-          .under_menu {
-            display: none;
-          }
-        }
-
-      }
-    }
-  }
 }
 
 

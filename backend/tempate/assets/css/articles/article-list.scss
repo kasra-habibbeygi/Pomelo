@@ -8,7 +8,6 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     align-items: center;
     margin-top: 50px;
     padding: 20px 40px;
@@ -16,7 +15,22 @@
 
 
 .content_box {
+    margin-top: 60px;
+    direction: rtl;
+    margin-bottom: 70px;
+
+    .addres_page{
+        padding-top: 30px;
+        width: 90%;
+        text-align: right;
+        margin: auto;
+      
+    }
+    
     .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         .search_product {
             @extend %box_style_content;
 

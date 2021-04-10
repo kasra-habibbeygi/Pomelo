@@ -16,7 +16,22 @@
 
 
 .content_box {
+    margin-top: 60px;
+    direction: rtl;
+    margin-bottom: 70px;
+
+    .addres_page{
+        padding-top: 30px;
+        width: 90%;
+        text-align: right;
+        margin: auto;
+      
+    }
+
     .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         .search_product {
             @extend %box_style_content;
 
