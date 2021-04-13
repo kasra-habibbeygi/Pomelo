@@ -1,0 +1,24 @@
+@import '../partials/mixin', '../partials/variable', '../partials/errors';
+@import "../partials/style";
+
+.main{
+
+    .dashboard{
+
+        .left_box{
+
+            .content_box{
+
+                .content{
+
+                  @extend %box_style_content;  
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
