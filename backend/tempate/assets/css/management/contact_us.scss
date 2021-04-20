@@ -36,6 +36,12 @@
                             padding: 10px;
                             position: relative;
                             margin-bottom: 20px;
+                            
+                            &:last-child{
+                                
+                                margin-bottom: 0px;
+
+                            }
 
                             .imageProfile {
 
@@ -131,11 +137,20 @@
                                     color: red;
                                     background-color: rgba(255, 0, 0, 0.2);
 
+                                    &:hover {
+
+                                        background-color: rgba(255, 0, 0, 0.5);
+
+                                    }
+
                                     &:first-child {
 
                                         color: green;
                                         background-color: rgba(0, 128, 0, 0.2);
 
+                                        &:hover {
+                                            background-color: rgba(0, 128, 0, 0.5);
+                                        }
                                     }
 
                                     &:nth-child(2) {
@@ -143,6 +158,9 @@
                                         color: blue;
                                         background-color: rgba(0, 0, 255, 0.2);
 
+                                        &:hover {
+                                            background-color: rgba(0, 0, 255, 0.5);
+                                        }
                                     }
 
                                 }
@@ -169,7 +187,7 @@
 
                                 }
 
-                                .massage_answer_button{
+                                .massage_answer_button {
 
                                     width: 6.5%;
                                     height: 80%;

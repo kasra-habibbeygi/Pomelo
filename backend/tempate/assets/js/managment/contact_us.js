@@ -1,8 +1,9 @@
 //open email box
 let flag = 0;
-$(".send_items").eq(0).click(function () {
+$(".send_items:nth-child(1)").click(function () {
 
-    if (flag == 0) {
+
+    if ($(this).hasClass("rotate_icon") == false) {
         $(this).addClass("rotate_icon");
         $(this).parent().children(".send_text").addClass('open_text_box');
         $(this).parent().children("form").css("display" , "flex");
@@ -20,23 +21,14 @@ $(".send_items").eq(0).click(function () {
 
 })
 //modal open(remove)
-let del_lane;
-$(".acccept_edit_remove").eq(2).click(function(){
+$(".acccept_edit_remove:nth-child(3)").click(function(){
 
-    del_lane = $(this);
     $(".cheack_box_modal_page").fadeIn();
 
 })
 //modal
-$(".a_r").eq(0).click(function(){
+$(".a_r:nth-child(1)").click(function(){
 
-    $(".cheack_box_modal_page").fadeOut();
-
-
-})
-$(".a_r").eq(1).click(function(){
-
-    del_lane.parent().parent().remove();
     $(".cheack_box_modal_page").fadeOut();
 
 
