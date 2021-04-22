@@ -2,6 +2,7 @@
 @import "../partials/pagination";
 @import "../partials/table";
 @import "../partials/style";
+@import "../partials/check-box";
 
 
 .content_box {
@@ -66,6 +67,3 @@
     }
 }
 
-input:checked .checkmark {
-    background-color: #2196F3 !important;
-  }
