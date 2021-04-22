@@ -1,0 +1,219 @@
+@import '../partials/mixin', '../partials/variable', '../partials/errors';
+@import "../partials/style", "../partials/modal-style";
+
+.main {
+
+    position: relative;
+
+    .dashboard {
+
+        .left_box {
+
+            .content_box {
+
+                .content {
+
+                    width: 100%;
+
+                    p {
+
+                        margin: 0;
+
+                    }
+
+                    .message_box {
+
+                        @extend %box_style_content;
+                        padding: 40px;
+
+                        .person_message {
+
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            border: 1px solid #8585854b;
+                            padding: 10px;
+                            position: relative;
+                            margin-bottom: 20px;
+                            
+                            &:last-child{
+                                
+                                margin-bottom: 0px;
+
+                            }
+
+                            .imageProfile {
+
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 100%;
+                                border: 6px solid #F8F8F8;
+                                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: #003873;
+                                font-size: 1.3rem;
+
+                            }
+
+                            .send_items {
+
+                                margin-left: 3%;
+
+                                &:first-child {
+
+                                    margin-left: 1%;
+                                    cursor: pointer;
+
+                                }
+
+                                &:nth-child(4) {
+
+                                    margin-left: 1%;
+
+                                }
+
+                                &:last-child {
+
+                                    margin: 0;
+
+                                }
+
+                            }
+
+                            .rotate_icon {
+
+                                @include transform (rotate(-90deg));
+
+                            }
+
+                            .send_time,
+                            .send_date {
+
+                                color: #A6A8A9;
+                                font-size: 0.9rem;
+
+                            }
+
+                            .send_text {
+
+                                max-width: 37%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+
+                            }
+
+                            .open_text_box {
+
+                                max-width: 100%;
+                                overflow: unset;
+                                text-overflow: unset;
+                                white-space: unset;
+                                direction: rtl;
+                                text-align: right;
+                                padding: 30px 10px;
+
+                            }
+
+                            .button_box {
+
+                                display: flex;
+                                flex-wrap: wrap;
+                                position: absolute;
+                                left: 33px;
+                                top: 22px;
+
+                                .acccept_edit_remove {
+
+                                    border: none;
+                                    border-radius: 5px;
+                                    margin-left: 8px;
+                                    color: red;
+                                    background-color: rgba(255, 0, 0, 0.2);
+
+                                    &:hover {
+
+                                        background-color: rgba(255, 0, 0, 0.5);
+
+                                    }
+
+                                    &:first-child {
+
+                                        color: green;
+                                        background-color: rgba(0, 128, 0, 0.2);
+
+                                        &:hover {
+                                            background-color: rgba(0, 128, 0, 0.5);
+                                        }
+                                    }
+
+                                    &:nth-child(2) {
+
+                                        color: blue;
+                                        background-color: rgba(0, 0, 255, 0.2);
+
+                                        &:hover {
+                                            background-color: rgba(0, 0, 255, 0.5);
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            form {
+
+                                width: 100%;
+                                height: 100px;
+                                border-top: 1px solid #DBDBDB;
+                                display: none;
+                                align-items: center;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                padding-top: 10px;
+
+                                .massage_answer {
+
+                                    width: 90%;
+                                    height: 100%;
+                                    direction: rtl;
+                                    resize: none;
+                                    color: #212529;
+
+                                }
+
+                                .massage_answer_button {
+
+                                    width: 6.5%;
+                                    height: 80%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #A5DFEB;
+                                    color: white;
+                                    border-radius: 10000px;
+                                    border: none;
+                                    font-size: 2rem;
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

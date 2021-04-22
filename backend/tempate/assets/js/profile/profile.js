@@ -44,6 +44,7 @@ $(".change-button").eq(1).click(function () {
 
     $(".imageProfile").hide();
     $(".container").show();
+    $(".form-control").attr("disabled" , false);
 
 })
 // show pass
